@@ -1,0 +1,12 @@
+C:\Users\Rodri\source\repos\ClaseParcial2\bin\Debug\net5.0\ClaseParcial2.deps.json
+C:\Users\Rodri\source\repos\ClaseParcial2\bin\Debug\net5.0\ClaseParcial2.dll
+C:\Users\Rodri\source\repos\ClaseParcial2\bin\Debug\net5.0\ref\ClaseParcial2.dll
+C:\Users\Rodri\source\repos\ClaseParcial2\bin\Debug\net5.0\ClaseParcial2.pdb
+C:\Users\Rodri\source\repos\ClaseParcial2\obj\Debug\net5.0\ClaseParcial2.csproj.AssemblyReference.cache
+C:\Users\Rodri\source\repos\ClaseParcial2\obj\Debug\net5.0\ClaseParcial2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rodri\source\repos\ClaseParcial2\obj\Debug\net5.0\ClaseParcial2.AssemblyInfoInputs.cache
+C:\Users\Rodri\source\repos\ClaseParcial2\obj\Debug\net5.0\ClaseParcial2.AssemblyInfo.cs
+C:\Users\Rodri\source\repos\ClaseParcial2\obj\Debug\net5.0\ClaseParcial2.csproj.CoreCompileInputs.cache
+C:\Users\Rodri\source\repos\ClaseParcial2\obj\Debug\net5.0\ClaseParcial2.dll
+C:\Users\Rodri\source\repos\ClaseParcial2\obj\Debug\net5.0\ref\ClaseParcial2.dll
+C:\Users\Rodri\source\repos\ClaseParcial2\obj\Debug\net5.0\ClaseParcial2.pdb

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Parcial2Labo2/1.0.0": {
+        "dependencies": {
+          "ClaseParcial2": "1.0.0"
+        },
+        "runtime": {
+          "Parcial2Labo2.dll": {}
+        }
+      },
+      "ClaseParcial2/1.0.0": {
+        "runtime": {
+          "ClaseParcial2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Parcial2Labo2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClaseParcial2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
