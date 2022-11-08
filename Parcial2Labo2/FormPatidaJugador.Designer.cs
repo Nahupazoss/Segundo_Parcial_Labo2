@@ -49,13 +49,13 @@ namespace Parcial2Labo2
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Maroon;
+            this.groupBox1.BackColor = System.Drawing.Color.Black;
             this.groupBox1.Controls.Add(this.img_5);
             this.groupBox1.Controls.Add(this.img_4);
             this.groupBox1.Controls.Add(this.img_2);
             this.groupBox1.Controls.Add(this.img_3);
             this.groupBox1.Controls.Add(this.img_1);
-            this.groupBox1.ForeColor = System.Drawing.Color.Maroon;
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(12, 167);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(663, 196);
@@ -65,6 +65,7 @@ namespace Parcial2Labo2
             // 
             // img_5
             // 
+            this.img_5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_5.Image = ((System.Drawing.Image)(resources.GetObject("img_5.Image")));
             this.img_5.Location = new System.Drawing.Point(532, 59);
             this.img_5.Name = "img_5";
@@ -76,6 +77,7 @@ namespace Parcial2Labo2
             // 
             // img_4
             // 
+            this.img_4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_4.Image = ((System.Drawing.Image)(resources.GetObject("img_4.Image")));
             this.img_4.Location = new System.Drawing.Point(404, 59);
             this.img_4.Name = "img_4";
@@ -87,6 +89,7 @@ namespace Parcial2Labo2
             // 
             // img_2
             // 
+            this.img_2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_2.Image = ((System.Drawing.Image)(resources.GetObject("img_2.Image")));
             this.img_2.Location = new System.Drawing.Point(153, 59);
             this.img_2.Name = "img_2";
@@ -98,6 +101,7 @@ namespace Parcial2Labo2
             // 
             // img_3
             // 
+            this.img_3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_3.Image = ((System.Drawing.Image)(resources.GetObject("img_3.Image")));
             this.img_3.Location = new System.Drawing.Point(281, 59);
             this.img_3.Name = "img_3";
@@ -109,6 +113,7 @@ namespace Parcial2Labo2
             // 
             // img_1
             // 
+            this.img_1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_1.Image = global::Parcial2Labo2.Properties.Resources.cara0;
             this.img_1.Location = new System.Drawing.Point(26, 59);
             this.img_1.Name = "img_1";
@@ -120,7 +125,7 @@ namespace Parcial2Labo2
             // 
             // btn_tirar1
             // 
-            this.btn_tirar1.BackColor = System.Drawing.Color.Maroon;
+            this.btn_tirar1.BackColor = System.Drawing.Color.Black;
             this.btn_tirar1.ForeColor = System.Drawing.Color.White;
             this.btn_tirar1.Location = new System.Drawing.Point(252, 543);
             this.btn_tirar1.Name = "btn_tirar1";
@@ -132,7 +137,7 @@ namespace Parcial2Labo2
             // 
             // btn_2doTiro
             // 
-            this.btn_2doTiro.BackColor = System.Drawing.Color.Maroon;
+            this.btn_2doTiro.BackColor = System.Drawing.Color.Black;
             this.btn_2doTiro.ForeColor = System.Drawing.Color.White;
             this.btn_2doTiro.Location = new System.Drawing.Point(252, 543);
             this.btn_2doTiro.Name = "btn_2doTiro";
@@ -144,7 +149,7 @@ namespace Parcial2Labo2
             // 
             // btn_3erTiro
             // 
-            this.btn_3erTiro.BackColor = System.Drawing.Color.Maroon;
+            this.btn_3erTiro.BackColor = System.Drawing.Color.Black;
             this.btn_3erTiro.ForeColor = System.Drawing.Color.White;
             this.btn_3erTiro.Location = new System.Drawing.Point(252, 543);
             this.btn_3erTiro.Name = "btn_3erTiro";
@@ -159,7 +164,8 @@ namespace Parcial2Labo2
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(684, 626);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1103, 626);
             this.Controls.Add(this.btn_3erTiro);
             this.Controls.Add(this.btn_2doTiro);
             this.Controls.Add(this.btn_tirar1);

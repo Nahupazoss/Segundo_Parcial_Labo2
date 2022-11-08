@@ -16,6 +16,8 @@ namespace Parcial2Labo2
         FormInicioSesion menuInicioSesion;
         FormCrearPartida menuCrearPartida;
         FormEstadisticas menuEstadisticas;
+        FormHistorial menuHistorial;
+        FormAyuda menuAyuda;
         System.Media.SoundPlayer menuInicioMusica;
         public FormMenuPrincipal()
         {
@@ -34,10 +36,12 @@ namespace Parcial2Labo2
 
         private void FormMenuPrincipal_Load(object sender, EventArgs e)
         {
-            this.img_menu.Image = Image.FromFile(@"C:\Users\Rodri\source\repos\Parcial2Labo2\Imagenes\imagenmenu.gif");
+            this.img_menu.Image = Properties.Resources.imagenmenu;
             menuInicioSesion = new FormInicioSesion();
             menuCrearPartida = new FormCrearPartida();
             menuEstadisticas = new FormEstadisticas();
+            menuHistorial = new FormHistorial();
+            menuAyuda = new FormAyuda();
             lbl_Fecha.Text = DateTime.Now.ToLongDateString();
             System.IO.Stream audioMenu = Properties.Resources.DadosMenu;
             menuInicioMusica = new System.Media.SoundPlayer(audioMenu);
@@ -64,6 +68,16 @@ namespace Parcial2Labo2
         private void btn_Estadisticas_Click(object sender, EventArgs e)
         {
             menuEstadisticas.Show();
+        }
+
+        private void btn_Help_Click(object sender, EventArgs e)
+        {
+            menuAyuda.Show();
+        }
+
+        private void btn_HistorialPartidas_Click(object sender, EventArgs e)
+        {
+            menuHistorial.Show();
         }
     }
 }

@@ -8,13 +8,11 @@ namespace ClaseParcial2
 {
     public static class Sistema
     {
-        static List<Jugador> jugadores;
         static List<JugadorPersona> jugadoresPersona;
         static List<JugadorIA> jugadorIA;
-
+        public static List<JugadorPersona> JugadorPersona { get => jugadoresPersona; }
         static Sistema()
         {
-            jugadores = new List<Jugador>();
             jugadoresPersona = new List<JugadorPersona>();
             jugadorIA = new List<JugadorIA>();
             HardCodeJugadorPersona();

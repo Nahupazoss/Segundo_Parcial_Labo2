@@ -15,6 +15,7 @@ namespace Parcial2Labo2
     {
         List<Image> imagenesDado;
         System.Media.SoundPlayer musicaTiradaDados;
+        bool noPuedeTocarDados;
         public FormPartida()
         {
             InitializeComponent();
@@ -35,6 +36,7 @@ namespace Parcial2Labo2
             LimpiarDados();
             btn_2doTiro.Visible = false;
             btn_3erTiro.Visible = false;
+            noPuedeTocarDados = true;
         }
 
         public void LimpiarDados()
@@ -114,30 +116,51 @@ namespace Parcial2Labo2
             this.btn_tirar1.Visible = false;
             musicaTiradaDados.Play();
             btn_2doTiro.Visible = true;
+            noPuedeTocarDados = false;
         }
 
         private void img_1_Click(object sender, EventArgs e)
         {
+            if(noPuedeTocarDados)
+            {
+                return;
+            }
             img_1.Visible = false;
         }
 
         private void img_2_Click(object sender, EventArgs e)
         {
+            if(noPuedeTocarDados)
+            {
+                return;
+            }
             img_2.Visible = false;
         }
 
         private void img_3_Click(object sender, EventArgs e)
         {
+            if(noPuedeTocarDados)
+            {
+                return;
+            }
             img_3.Visible = false;
         }
 
         private void img_4_Click(object sender, EventArgs e)
         {
+            if(noPuedeTocarDados)
+            {
+                return;
+            }
             img_4.Visible = false;
         }
 
         private void img_5_Click(object sender, EventArgs e)
         {
+            if(noPuedeTocarDados)
+            {
+                return;
+            }
             img_5.Visible = false;
         }
 
@@ -147,6 +170,7 @@ namespace Parcial2Labo2
             btn_2doTiro.Visible = false;
             musicaTiradaDados.Play();
             btn_3erTiro.Visible = true;
+            noPuedeTocarDados = false;
         }
 
         private void btn_3erTiro_Click(object sender, EventArgs e)
@@ -154,6 +178,7 @@ namespace Parcial2Labo2
             TiroDeDadoElegido();
             btn_3erTiro.Visible = false;
             musicaTiradaDados.Play();
+            noPuedeTocarDados = true;
         }
     }
 }

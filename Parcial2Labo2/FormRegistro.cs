@@ -21,7 +21,7 @@ namespace Parcial2Labo2
 
         private void FormRegistro_Load(object sender, EventArgs e)
         {
-            this.img_dado3.Image = Image.FromFile(@"C:\Users\Rodri\source\repos\Parcial2Labo2\Imagenes\dadosss.gif");
+            this.img_dado3.Image = Properties.Resources.dadosss;
             menuInicio = new FormInicioSesion();
             lbl_MsgError.Visible = false;
         }

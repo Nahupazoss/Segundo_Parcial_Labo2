@@ -21,7 +21,7 @@ namespace Parcial2Labo2
 
         private void FormCrearPartida_Load(object sender, EventArgs e)
         {
-            this.img_dados2.Image = Image.FromFile(@"C:\Users\Rodri\source\repos\Parcial2Labo2\Imagenes\dadoss.gif");
+            this.img_dados2.Image = Properties.Resources.dadoss;
             cmbx_CantJugadoress.DataSource = Enum.GetNames(typeof(CantJugador));
             menuPartida = new FormPartida();
         }
@@ -33,7 +33,7 @@ namespace Parcial2Labo2
 
             if (opcion == DialogResult.Yes)
             {
-                Application.Exit();
+                Close();
             }
         }
 

@@ -24,10 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Imagenes\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ClaseParcial2\ClaseParcial2.csproj" />
   </ItemGroup>
 

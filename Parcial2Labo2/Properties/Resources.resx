@@ -142,6 +142,24 @@
   <data name="DadosMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DadosMenu.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="dadoss" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\dadoss.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dadosss" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\dadosss.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoAyuda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoAyuda.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondoMesa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondoMesa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImagenInicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\imageninicio.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imagenmenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imagenmenu.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MusicaEspera" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\musica de espera.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>

@@ -40,9 +40,11 @@ namespace Parcial2Labo2
             this.btn_Estadisticas = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_Help = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.img_menu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Help)).BeginInit();
             this.SuspendLayout();
             // 
             // img_menu
@@ -131,6 +133,7 @@ namespace Parcial2Labo2
             this.btn_HistorialPartidas.TabIndex = 16;
             this.btn_HistorialPartidas.Text = "HISTORIAL DE PARTIDAS";
             this.btn_HistorialPartidas.UseVisualStyleBackColor = false;
+            this.btn_HistorialPartidas.Click += new System.EventHandler(this.btn_HistorialPartidas_Click);
             // 
             // btn_Estadisticas
             // 
@@ -168,12 +171,26 @@ namespace Parcial2Labo2
             this.label1.TabIndex = 19;
             this.label1.Text = "Jugar a la generala nunca fue tan facil!";
             // 
+            // btn_Help
+            // 
+            this.btn_Help.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Help.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Help.Image = ((System.Drawing.Image)(resources.GetObject("btn_Help.Image")));
+            this.btn_Help.Location = new System.Drawing.Point(691, 3);
+            this.btn_Help.Name = "btn_Help";
+            this.btn_Help.Size = new System.Drawing.Size(68, 56);
+            this.btn_Help.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_Help.TabIndex = 20;
+            this.btn_Help.TabStop = false;
+            this.btn_Help.Click += new System.EventHandler(this.btn_Help_Click);
+            // 
             // FormMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(818, 622);
+            this.Controls.Add(this.btn_Help);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_Fecha);
@@ -193,6 +210,7 @@ namespace Parcial2Labo2
             ((System.ComponentModel.ISupportInitialize)(this.img_menu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Help)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,5 +228,6 @@ namespace Parcial2Labo2
         private System.Windows.Forms.Button btn_Estadisticas;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox btn_Help;
     }
 }

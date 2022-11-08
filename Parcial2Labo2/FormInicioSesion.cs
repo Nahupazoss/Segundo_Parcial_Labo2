@@ -22,7 +22,7 @@ namespace Parcial2Labo2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.imgn_inicio.Image = Image.FromFile(@"C:\Users\Rodri\source\repos\Parcial2Labo2\Imagenes\ImagenInicio.gif");
+            this.imgn_inicio.Image = Properties.Resources.ImagenInicio;
             lbl_MsgError.Visible = false;
             img_SonidoDesactivado.Visible = false;
             System.IO.Stream audioEspera = Properties.Resources.MusicaEspera;
@@ -38,7 +38,7 @@ namespace Parcial2Labo2
 
             if(opcion == DialogResult.Yes)
             {
-                Close();
+                Application.Exit();
             }
         }
 
