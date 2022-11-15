@@ -37,7 +37,7 @@ namespace Parcial2Labo2
         public void ActualizarDataGrid()
         {
             dtgv_historial.DataSource = null;
-            dtgv_historial.DataSource = Sistema.JugadorPersona;
+            //dtgv_historial.DataSource = Sistema.JugadorPersona;
         }
     }
 }

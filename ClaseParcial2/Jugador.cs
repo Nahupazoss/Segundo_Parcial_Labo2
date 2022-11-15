@@ -6,26 +6,31 @@ using System.Threading.Tasks;
 
 namespace ClaseParcial2
 {
-    public abstract class Jugador
+    public class Jugador
     {
         string nombre;
-        string apellido;
-        int partidasGanadas;
-        int partidasPerdidas;
+        int rondasGanadas;
 
-        public Jugador(string nombre, string apellido)
+        public Jugador(string nombre, int rondasGanadas)
         {
             this.nombre = nombre;
-            this.apellido = apellido;
-            this.partidasGanadas = 0;
-            this.partidasPerdidas = 0;
+            this.rondasGanadas = rondasGanadas;
         }
 
-        public string Nombre { get => nombre; }
-        public string Apellido { get => apellido; }
-        public int PartidasGanadas { get => partidasGanadas; }
-        public int PartidasPerdidas { get => partidasPerdidas; }
+        public string Nombre
+        {
+            get
+            {
+                return this.nombre;
+            }
+        }
 
-
+        public int RondasGanadas
+        {
+            get
+            {
+                return this.rondasGanadas;
+            }
+        }
     }
 }

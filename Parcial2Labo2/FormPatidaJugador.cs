@@ -180,5 +180,16 @@ namespace Parcial2Labo2
             musicaTiradaDados.Play();
             noPuedeTocarDados = true;
         }
+
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+            DialogResult opcion;
+            opcion = MessageBox.Show("Si sales de la partida perderas automaticamente!! Estas seguro de abandonar?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (opcion == DialogResult.Yes)
+            {
+                Hide();
+            }
+        }
     }
 }

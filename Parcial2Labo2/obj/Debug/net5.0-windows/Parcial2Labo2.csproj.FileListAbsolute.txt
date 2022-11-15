@@ -27,3 +27,4 @@ C:\Users\Rodri\source\repos\Parcial2Labo2\obj\Debug\net5.0-windows\Parcial2Labo2
 C:\Users\Rodri\source\repos\Parcial2Labo2\obj\Debug\net5.0-windows\Parcial2Labo2.FormEstadisticas.resources
 C:\Users\Rodri\source\repos\Parcial2Labo2\obj\Debug\net5.0-windows\Parcial2Labo2.FormAyuda.resources
 C:\Users\Rodri\source\repos\Parcial2Labo2\obj\Debug\net5.0-windows\Parcial2Labo2.FormHistorial.resources
+C:\Users\Rodri\source\repos\Parcial2Labo2\obj\Debug\net5.0-windows\Parcial2Labo2.FormJugadorV2.resources

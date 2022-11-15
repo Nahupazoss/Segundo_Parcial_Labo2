@@ -78,9 +78,12 @@ namespace Parcial2Labo2
 
         private void btn_Invitado_Click(object sender, EventArgs e)
         {
-            string usuario = "Invitado";
+            Random random = new Random();
+            string random2 = random.Next(0,100).ToString();
+            string usuario = "Invitado" + random2;
+            Jugador jugador = new Jugador(usuario, 0);
 
-            if (Validador.ValidarTexto(usuario))
+            if(Validador.ValidarTexto(usuario))
             {
                 FormMenuPrincipal menuPrincipal = new FormMenuPrincipal($"¡Bienvenido {usuario}!");
 

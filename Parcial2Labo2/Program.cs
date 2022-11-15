@@ -15,7 +15,6 @@ namespace Parcial2Labo2
         [STAThread]
         static void Main()
         {
-            LogicaJuego a = new LogicaJuego(null,null,0,0,0);
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

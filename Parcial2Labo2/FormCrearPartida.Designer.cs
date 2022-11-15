@@ -39,10 +39,17 @@ namespace Parcial2Labo2
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btn_PartidaSimulado = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_dados2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_JugarYa
@@ -50,9 +57,9 @@ namespace Parcial2Labo2
             this.btn_JugarYa.BackColor = System.Drawing.Color.Maroon;
             this.btn_JugarYa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_JugarYa.ForeColor = System.Drawing.Color.White;
-            this.btn_JugarYa.Location = new System.Drawing.Point(558, 188);
+            this.btn_JugarYa.Location = new System.Drawing.Point(155, 248);
             this.btn_JugarYa.Name = "btn_JugarYa";
-            this.btn_JugarYa.Size = new System.Drawing.Size(137, 50);
+            this.btn_JugarYa.Size = new System.Drawing.Size(89, 50);
             this.btn_JugarYa.TabIndex = 2;
             this.btn_JugarYa.Text = "JUGAR YA!!";
             this.btn_JugarYa.UseVisualStyleBackColor = false;
@@ -71,7 +78,7 @@ namespace Parcial2Labo2
             // 
             this.btn_Salir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_Salir.Image")));
-            this.btn_Salir.Location = new System.Drawing.Point(640, 3);
+            this.btn_Salir.Location = new System.Drawing.Point(839, 3);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(55, 47);
             this.btn_Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -83,10 +90,9 @@ namespace Parcial2Labo2
             // 
             this.img_dados2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_dados2.Image = ((System.Drawing.Image)(resources.GetObject("img_dados2.Image")));
-            this.img_dados2.Location = new System.Drawing.Point(246, 3);
+            this.img_dados2.Location = new System.Drawing.Point(210, -39);
             this.img_dados2.Name = "img_dados2";
-            this.img_dados2.Size = new System.Drawing.Size(306, 245);
-            this.img_dados2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.img_dados2.Size = new System.Drawing.Size(684, 295);
             this.img_dados2.TabIndex = 10;
             this.img_dados2.TabStop = false;
             // 
@@ -142,24 +148,70 @@ namespace Parcial2Labo2
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-346, -86);
+            this.pictureBox2.Location = new System.Drawing.Point(-421, -135);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(736, 965);
+            this.pictureBox2.Size = new System.Drawing.Size(649, 965);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
+            // 
+            // btn_PartidaSimulado
+            // 
+            this.btn_PartidaSimulado.BackColor = System.Drawing.Color.Maroon;
+            this.btn_PartidaSimulado.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_PartidaSimulado.ForeColor = System.Drawing.Color.White;
+            this.btn_PartidaSimulado.Location = new System.Drawing.Point(12, 248);
+            this.btn_PartidaSimulado.Name = "btn_PartidaSimulado";
+            this.btn_PartidaSimulado.Size = new System.Drawing.Size(137, 50);
+            this.btn_PartidaSimulado.TabIndex = 15;
+            this.btn_PartidaSimulado.Text = "SIMULAR PARTIDA";
+            this.btn_PartidaSimulado.UseVisualStyleBackColor = false;
+            this.btn_PartidaSimulado.Click += new System.EventHandler(this.btn_PartidaSimulado_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Location = new System.Drawing.Point(12, 304);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(872, 217);
+            this.panel2.TabIndex = 16;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(526, 309);
+            this.pictureBox3.TabIndex = 17;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(275, -3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(649, 312);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
             // FormCrearPartida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(702, 250);
+            this.ClientSize = new System.Drawing.Size(907, 565);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.btn_JugarYa);
+            this.Controls.Add(this.btn_Salir);
+            this.Controls.Add(this.btn_PartidaSimulado);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.img_dados2);
-            this.Controls.Add(this.btn_Salir);
-            this.Controls.Add(this.btn_JugarYa);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCrearPartida";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -170,6 +222,9 @@ namespace Parcial2Labo2
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,5 +240,9 @@ namespace Parcial2Labo2
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btn_PartidaSimulado;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

@@ -14,6 +14,7 @@ namespace Parcial2Labo2
     public partial class FormCrearPartida : Form
     {
         FormPartida menuPartida;
+        FormJugadorV2 menuPartidaSimulada;
         public FormCrearPartida()
         {
             InitializeComponent();
@@ -24,6 +25,7 @@ namespace Parcial2Labo2
             this.img_dados2.Image = Properties.Resources.dadoss;
             cmbx_CantJugadoress.DataSource = Enum.GetNames(typeof(CantJugador));
             menuPartida = new FormPartida();
+            menuPartidaSimulada = new FormJugadorV2();
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)
@@ -49,6 +51,11 @@ namespace Parcial2Labo2
             {
                 MessageBox.Show("Debes ponerle nombre a tu sala!");
             }
+        }
+
+        private void btn_PartidaSimulado_Click(object sender, EventArgs e)
+        {
+            menuPartidaSimulada.Show();
         }
     }
 }
