@@ -41,6 +41,7 @@ namespace Parcial2Labo2
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Help = new System.Windows.Forms.PictureBox();
+            this.lbl_mensajeAviso = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.img_menu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -184,12 +185,23 @@ namespace Parcial2Labo2
             this.btn_Help.TabStop = false;
             this.btn_Help.Click += new System.EventHandler(this.btn_Help_Click);
             // 
+            // lbl_mensajeAviso
+            // 
+            this.lbl_mensajeAviso.AutoSize = true;
+            this.lbl_mensajeAviso.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_mensajeAviso.Location = new System.Drawing.Point(87, 433);
+            this.lbl_mensajeAviso.Name = "lbl_mensajeAviso";
+            this.lbl_mensajeAviso.Size = new System.Drawing.Size(279, 15);
+            this.lbl_mensajeAviso.TabIndex = 21;
+            this.lbl_mensajeAviso.Text = "Si deseas tener estadisticas debes tener una cuenta!!";
+            // 
             // FormMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(818, 622);
+            this.Controls.Add(this.lbl_mensajeAviso);
             this.Controls.Add(this.btn_Help);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -229,5 +241,6 @@ namespace Parcial2Labo2
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btn_Help;
+        private System.Windows.Forms.Label lbl_mensajeAviso;
     }
 }

@@ -150,7 +150,7 @@ namespace Parcial2Labo2
             this.lbl_MsgError.AutoSize = true;
             this.lbl_MsgError.BackColor = System.Drawing.Color.Transparent;
             this.lbl_MsgError.ForeColor = System.Drawing.Color.Red;
-            this.lbl_MsgError.Location = new System.Drawing.Point(43, 152);
+            this.lbl_MsgError.Location = new System.Drawing.Point(41, 152);
             this.lbl_MsgError.Name = "lbl_MsgError";
             this.lbl_MsgError.Size = new System.Drawing.Size(195, 15);
             this.lbl_MsgError.TabIndex = 9;

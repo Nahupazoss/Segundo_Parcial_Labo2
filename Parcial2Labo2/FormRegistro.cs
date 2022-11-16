@@ -50,6 +50,7 @@ namespace Parcial2Labo2
                 lbl_MsgError.Visible = false;
                 Sistema.RegistrarJugador(nombre,apellido,usuario,password);
                 MessageBox.Show($"{nombre} te has registrado con exito!!", "Registro",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                LimpiarTxtBox();
             }
             else
             {
@@ -62,6 +63,14 @@ namespace Parcial2Labo2
         private static bool VerificarRegistro(string nomb,string apellido, string usuario, string pass)
         {
             return Validador.ValidarTexto(nomb) && Validador.ValidarTexto(apellido) && Validador.ValidarTexto(usuario) && Validador.ValidarTexto(pass);
+        }
+
+        public void LimpiarTxtBox()
+        {
+            txt_Nomb.Text = "";
+            txt_Apellido.Text = "";
+            txt_Username.Text = "";
+            txt_Password.Text = "";
         }
     }
 }

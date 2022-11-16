@@ -24,9 +24,11 @@ namespace Parcial2Labo2
             InitializeComponent();
         }
 
-        public FormMenuPrincipal(string mensaje) : this()
+        public FormMenuPrincipal(string mensaje,bool hayJugadorLogueado) : this()
         {
             this.lbl_Bienvenida.Text = mensaje;
+            this.btn_Estadisticas.Enabled = hayJugadorLogueado;
+            this.lbl_mensajeAviso.Visible = !hayJugadorLogueado;
         }
 
         public string Mensaje

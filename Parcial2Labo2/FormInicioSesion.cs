@@ -49,7 +49,7 @@ namespace Parcial2Labo2
 
             if(Validador.ValidarTexto(usuario) && Validador.ValidarTexto(pass) && Sistema.LoguearJugador(usuario,pass))
             {
-                FormMenuPrincipal menuPrincipal = new FormMenuPrincipal($"¡Bienvenido {usuario}!");
+                FormMenuPrincipal menuPrincipal = new FormMenuPrincipal($"¡Bienvenido {usuario}!",true);
 
                 menuPrincipal.Show();
                 Hide();
@@ -85,7 +85,7 @@ namespace Parcial2Labo2
 
             if(Validador.ValidarTexto(usuario))
             {
-                FormMenuPrincipal menuPrincipal = new FormMenuPrincipal($"¡Bienvenido {usuario}!");
+                FormMenuPrincipal menuPrincipal = new FormMenuPrincipal($"¡Bienvenido {usuario}!",false);
 
                 menuPrincipal.Show();
                 Hide();

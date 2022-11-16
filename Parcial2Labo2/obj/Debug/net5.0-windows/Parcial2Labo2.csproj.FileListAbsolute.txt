@@ -28,3 +28,9 @@ C:\Users\Rodri\source\repos\Parcial2Labo2\obj\Debug\net5.0-windows\Parcial2Labo2
 C:\Users\Rodri\source\repos\Parcial2Labo2\obj\Debug\net5.0-windows\Parcial2Labo2.FormAyuda.resources
 C:\Users\Rodri\source\repos\Parcial2Labo2\obj\Debug\net5.0-windows\Parcial2Labo2.FormHistorial.resources
 C:\Users\Rodri\source\repos\Parcial2Labo2\obj\Debug\net5.0-windows\Parcial2Labo2.FormJugadorV2.resources
+C:\Users\Rodri\source\repos\Parcial2Labo2\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\Rodri\source\repos\Parcial2Labo2\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Rodri\source\repos\Parcial2Labo2\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Rodri\source\repos\Parcial2Labo2\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Rodri\source\repos\Parcial2Labo2\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Rodri\source\repos\Parcial2Labo2\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

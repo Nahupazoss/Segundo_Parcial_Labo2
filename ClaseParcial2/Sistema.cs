@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace ClaseParcial2
 {
     public static class Sistema
@@ -12,24 +11,23 @@ namespace ClaseParcial2
         static JugadorPersona jugadorLogueado;
         static List<JugadorPersona> jugadoresPersona;
         static List<Jugador> jugador;
+        static AccesoDatos accesoDatosJugador; 
 
         public static JugadorPersona JugadorLogueado { get => jugadorLogueado; set => jugadorLogueado = value; }
         public static List<JugadorPersona> JugadorPersona { get => jugadoresPersona; }
         public static List<Jugador> Jugador { get => jugador; }
         static Sistema()
         {
-            jugadoresPersona = new List<JugadorPersona>();
+            accesoDatosJugador = new AccesoDatos();
             jugador = new List<Jugador>();
-            //partidas = new List<LogicaJuego>();
+            jugadoresPersona = accesoDatosJugador.ObtenerListaDato();
             HardCodeJugadorPersona();
             HardCodeJugadorIA();
         }
 
         private static void HardCodeJugadorPersona()
         {
-            jugadoresPersona.Add(new JugadorPersona("Nahuel","Pazos", "NahuPaz", "123a",10,10,0));
-            jugadoresPersona.Add(new JugadorPersona("Maximiliano", "Neiner", "MaxiNei", "123aa",2,3,0));
-            jugadoresPersona.Add(new JugadorPersona("Facundo", "", "FacuRocha", "123aaa",3,3,0));
+            jugadoresPersona.Add(new JugadorPersona(1,"Nahuel","Pazos", "NahuPaz", "123a",10,10,0));
         }
 
         private static void HardCodeJugadorIA()
@@ -37,10 +35,6 @@ namespace ClaseParcial2
             jugador.Add(new Jugador("BotMauro",0));
             jugador.Add(new Jugador("BotValery",0));
             jugador.Add(new Jugador("BotNeiner",0));
-        }
-        private static void HardCodePartidas()
-        {
-            //partidas.Add(new LogicaJuego(jugadoresPersona[0],jugadorIA[0],10,10,10));
         }
 
         public static bool LoguearJugador(string usuario, string pass )
@@ -60,10 +54,9 @@ namespace ClaseParcial2
 
         public static void RegistrarJugador(string nombre, string apellido, string usuario, string pass)
         {
-            jugadoresPersona.Add(new JugadorPersona(nombre, apellido, usuario, pass,0,0,0));  
+            JugadorPersona jugador =  new JugadorPersona(nombre,apellido,usuario,pass,0,0,0);
+            accesoDatosJugador.AgregarDato(jugador);
         }
-        
-     
+       
     }
-
 }
