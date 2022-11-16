@@ -2,6 +2,7 @@
 Segundo Parcial Laboratorio 2
 
 Profesor: Maximiliano Neiner 
+
 Profesor: Facundo Rocha
 
 Alumno: Nahuel Rodrigo Pazos
