@@ -25,9 +25,15 @@ namespace ClaseParcial2
             HardCodeJugadorIA();
         }
 
+        public static List<JugadorPersona> ObtenerJugadoresPersona()
+        {
+            return jugadoresPersona;
+        }
+
         private static void HardCodeJugadorPersona()
         {
             jugadoresPersona.Add(new JugadorPersona(1,"Nahuel","Pazos", "NahuPaz", "123a",10,10,0));
+            jugadoresPersona.Add(new JugadorPersona(2, "Mateo", "Zarza", "MateZarza", "123aa", 10, 10, 0));
         }
 
         private static void HardCodeJugadorIA()

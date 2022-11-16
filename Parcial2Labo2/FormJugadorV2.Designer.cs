@@ -38,6 +38,7 @@ namespace Parcial2Labo2
             this.img_2 = new System.Windows.Forms.PictureBox();
             this.img_3 = new System.Windows.Forms.PictureBox();
             this.img_1 = new System.Windows.Forms.PictureBox();
+            this.lbl_jugador = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_5)).BeginInit();
@@ -51,7 +52,7 @@ namespace Parcial2Labo2
             // 
             this.btn_tirar1.BackColor = System.Drawing.Color.Black;
             this.btn_tirar1.ForeColor = System.Drawing.Color.White;
-            this.btn_tirar1.Location = new System.Drawing.Point(271, 533);
+            this.btn_tirar1.Location = new System.Drawing.Point(273, 532);
             this.btn_tirar1.Name = "btn_tirar1";
             this.btn_tirar1.Size = new System.Drawing.Size(161, 59);
             this.btn_tirar1.TabIndex = 1;
@@ -65,12 +66,13 @@ namespace Parcial2Labo2
             this.btn_Salir.BackColor = System.Drawing.Color.Transparent;
             this.btn_Salir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_Salir.Image")));
-            this.btn_Salir.Location = new System.Drawing.Point(12, 552);
+            this.btn_Salir.Location = new System.Drawing.Point(26, 541);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(51, 50);
             this.btn_Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_Salir.TabIndex = 10;
             this.btn_Salir.TabStop = false;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // groupBox1
             // 
@@ -143,13 +145,24 @@ namespace Parcial2Labo2
             this.img_1.TabIndex = 0;
             this.img_1.TabStop = false;
             // 
+            // lbl_jugador
+            // 
+            this.lbl_jugador.AutoSize = true;
+            this.lbl_jugador.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_jugador.ForeColor = System.Drawing.Color.White;
+            this.lbl_jugador.Location = new System.Drawing.Point(223, 284);
+            this.lbl_jugador.Name = "lbl_jugador";
+            this.lbl_jugador.Size = new System.Drawing.Size(0, 21);
+            this.lbl_jugador.TabIndex = 12;
+            // 
             // FormJugadorV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(715, 626);
+            this.ClientSize = new System.Drawing.Size(715, 614);
+            this.Controls.Add(this.lbl_jugador);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.btn_tirar1);
@@ -165,6 +178,7 @@ namespace Parcial2Labo2
             ((System.ComponentModel.ISupportInitialize)(this.img_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -177,5 +191,6 @@ namespace Parcial2Labo2
         private System.Windows.Forms.PictureBox img_2;
         private System.Windows.Forms.PictureBox img_3;
         private System.Windows.Forms.PictureBox img_1;
+        private System.Windows.Forms.Label lbl_jugador;
     }
 }

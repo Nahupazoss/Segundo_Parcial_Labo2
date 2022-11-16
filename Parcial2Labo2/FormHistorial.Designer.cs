@@ -34,6 +34,7 @@ namespace Parcial2Labo2
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Salir = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_historial)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
             this.SuspendLayout();
@@ -84,12 +85,23 @@ namespace Parcial2Labo2
             this.btn_Salir.TabStop = false;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(746, 59);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "eliminar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormHistorial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(905, 717);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -112,5 +124,6 @@ namespace Parcial2Labo2
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btn_Salir;
+        private System.Windows.Forms.Button button1;
     }
 }

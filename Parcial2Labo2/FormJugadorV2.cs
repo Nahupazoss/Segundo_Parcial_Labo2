@@ -28,8 +28,8 @@ namespace Parcial2Labo2
         private void FormJugadorV2_Load(object sender, EventArgs e)
         {
             reproductor = new SoundPlayer();
-            jugador1 = new Jugador("Nahuel", 0);
-            otroJugador = new Jugador("Mauro", 0);
+            jugador1 = new Jugador("Bot-Neiner", 0);
+            otroJugador = new Jugador("Bot-Pazos", 0);
             juego = new Juego(jugador1, otroJugador);
             juego.MandarMensaje += ImprimirMensaje;
             juego.TerminoPartida += ImprimirResultado;
@@ -53,7 +53,7 @@ namespace Parcial2Labo2
             }
             else
             {
-                //this.rtxtb_Partida.Text = this.rtxtb_Partida.Text.Insert(0, mensaje);
+                this.lbl_jugador.Text = this.lbl_jugador.Text.Insert(0, mensaje);
             }
         }
 
@@ -61,6 +61,7 @@ namespace Parcial2Labo2
         {
             Juego juego = (Juego)sender;
             MessageBox.Show(juego.Ganador);
+            LimpiarDados();
         }
 
         private void MostrarDados(List<int> listaDeDados)
@@ -105,6 +106,18 @@ namespace Parcial2Labo2
         private void btn_tirar1_Click(object sender, EventArgs e)
         {
             juego.ComenzarPartida();
+        }
+
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+            DialogResult opcion;
+            opcion = MessageBox.Show("Si sales de la partida perderas automaticamente!! Estas seguro de abandonar?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (opcion == DialogResult.Yes)
+            {
+                juego.CancelarPartida();
+                Hide();
+            }      
         }
     }
 }
