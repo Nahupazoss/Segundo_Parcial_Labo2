@@ -46,8 +46,9 @@ namespace Parcial2Labo2
         {
             string usuario = txt_Usuario.Text;
             string pass = txt_Pass.Text;
+            Sistema.ObtenerJugadoresPersona();
 
-            if(Validador.ValidarTexto(usuario) && Validador.ValidarTexto(pass) && Sistema.LoguearJugador(usuario,pass))
+            if (Validador.ValidarTexto(usuario) && Validador.ValidarTexto(pass) && Sistema.LoguearJugador(usuario,pass))
             {
                 FormMenuPrincipal menuPrincipal = new FormMenuPrincipal($"¡Bienvenido {usuario}!",true);
 

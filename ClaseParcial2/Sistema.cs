@@ -27,6 +27,7 @@ namespace ClaseParcial2
 
         public static List<JugadorPersona> ObtenerJugadoresPersona()
         {
+            jugadoresPersona = accesoDatosJugador.ObtenerListaDato();
             return jugadoresPersona;
         }
 
