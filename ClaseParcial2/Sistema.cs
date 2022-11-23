@@ -11,17 +11,20 @@ namespace ClaseParcial2
         static JugadorPersona jugadorLogueado;
         static List<JugadorPersona> jugadoresPersona;
         static List<Jugador> jugador;
+        static List<Juego> partidasEnJuego;
         static AccesoDatos accesoDatosJugador; 
 
         public static JugadorPersona JugadorLogueado { get => jugadorLogueado; set => jugadorLogueado = value; }
         public static List<JugadorPersona> JugadorPersona { get => jugadoresPersona; }
         public static List<Jugador> Jugador { get => jugador; }
+        public static List<Juego> PartidasEnJuego { get => partidasEnJuego; }
+
         static Sistema()
         {
             accesoDatosJugador = new AccesoDatos();
             jugador = new List<Jugador>();
+            partidasEnJuego = new List<Juego>();
             jugadoresPersona = accesoDatosJugador.ObtenerListaDato();
-            HardCodeJugadorPersona();
             HardCodeJugadorIA();
         }
 
@@ -31,17 +34,14 @@ namespace ClaseParcial2
             return jugadoresPersona;
         }
 
-        private static void HardCodeJugadorPersona()
-        {
-            jugadoresPersona.Add(new JugadorPersona(1,"Nahuel","Pazos", "NahuPaz", "123a",10,10,0));
-            jugadoresPersona.Add(new JugadorPersona(2, "Mateo", "Zarza", "MateZarza", "123aa", 10, 10, 0));
-        }
-
         private static void HardCodeJugadorIA()
         {
-            jugador.Add(new Jugador("BotMauro",0));
-            jugador.Add(new Jugador("BotValery",0));
-            jugador.Add(new Jugador("BotNeiner",0));
+            jugador.Add(new Jugador("BotMauro", 0));
+            jugador.Add(new Jugador("BotValery", 0));
+            jugador.Add(new Jugador("BotNeiner", 0));
+            jugador.Add(new Jugador("BotNahuel", 0));
+            jugador.Add(new Jugador("BotNathan", 0));
+            jugador.Add(new Jugador("BotMica", 0));
         }
 
         public static bool LoguearJugador(string usuario, string pass )
@@ -64,6 +64,16 @@ namespace ClaseParcial2
             JugadorPersona jugador =  new JugadorPersona(nombre,apellido,usuario,pass,0,0,0);
             accesoDatosJugador.AgregarDato(jugador);
         }
-       
+
+        public static void InstanciarPartidaIA(Jugador jugador1 , Jugador jugador2)
+        {
+            partidasEnJuego.Add(new Juego(jugador1, jugador2));
+        }
+
+        /*public static void InstanciarPartida(Jugador jugador1, Jugador jugador2)
+        {
+            partidasEnJuego.Add(new Juego(jugador1, jugador2));
+        }*/
+
     }
 }

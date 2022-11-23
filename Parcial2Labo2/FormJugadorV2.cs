@@ -10,27 +10,25 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ClaseParcial2;
 using System.Media;
+using System.Threading;
 
 namespace Parcial2Labo2
 {
     public partial class FormJugadorV2 : Form
     {
         Juego juego;
-        Jugador jugador1;
-        Jugador otroJugador;
         SoundPlayer reproductor;
         List<Image> imagenesDado;
-        public FormJugadorV2()
+
+        public FormJugadorV2(Juego juego)
         {
             InitializeComponent();
+            this.juego = juego;
             imagenesDado = new List<Image>();
         }
         private void FormJugadorV2_Load(object sender, EventArgs e)
         {
             reproductor = new SoundPlayer();
-            jugador1 = new Jugador("Bot-Neiner", 0);
-            otroJugador = new Jugador("Bot-Pazos", 0);
-            juego = new Juego(jugador1, otroJugador);
             juego.MandarMensaje += ImprimirMensaje;
             juego.TerminoPartida += ImprimirResultado;
             juego.SeTiraronDados += MostrarDados;
@@ -111,13 +109,24 @@ namespace Parcial2Labo2
         private void btn_Salir_Click(object sender, EventArgs e)
         {
             DialogResult opcion;
+            opcion = MessageBox.Show("Estas seguro de minimizar la partida?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (opcion == DialogResult.Yes)
+            {
+                Hide();
+            }      
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            DialogResult opcion;
             opcion = MessageBox.Show("Si sales de la partida perderas automaticamente!! Estas seguro de abandonar?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (opcion == DialogResult.Yes)
             {
                 juego.CancelarPartida();
                 Hide();
-            }      
+            }
         }
     }
 }

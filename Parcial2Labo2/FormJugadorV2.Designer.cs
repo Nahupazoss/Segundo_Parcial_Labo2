@@ -39,6 +39,7 @@ namespace Parcial2Labo2
             this.img_3 = new System.Windows.Forms.PictureBox();
             this.img_1 = new System.Windows.Forms.PictureBox();
             this.lbl_jugador = new System.Windows.Forms.Label();
+            this.btn_cancel = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_5)).BeginInit();
@@ -46,6 +47,7 @@ namespace Parcial2Labo2
             ((System.ComponentModel.ISupportInitialize)(this.img_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_tirar1
@@ -155,6 +157,20 @@ namespace Parcial2Labo2
             this.lbl_jugador.Size = new System.Drawing.Size(0, 21);
             this.lbl_jugador.TabIndex = 12;
             // 
+            // btn_cancel
+            // 
+            this.btn_cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_cancel.BackColor = System.Drawing.Color.Transparent;
+            this.btn_cancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_cancel.Image = ((System.Drawing.Image)(resources.GetObject("btn_cancel.Image")));
+            this.btn_cancel.Location = new System.Drawing.Point(558, 552);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.Size = new System.Drawing.Size(161, 50);
+            this.btn_cancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_cancel.TabIndex = 13;
+            this.btn_cancel.TabStop = false;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
+            // 
             // FormJugadorV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -162,10 +178,12 @@ namespace Parcial2Labo2
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(715, 614);
+            this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.lbl_jugador);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.btn_tirar1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormJugadorV2";
             this.Text = "Partida";
@@ -177,6 +195,7 @@ namespace Parcial2Labo2
             ((System.ComponentModel.ISupportInitialize)(this.img_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,5 +211,6 @@ namespace Parcial2Labo2
         private System.Windows.Forms.PictureBox img_3;
         private System.Windows.Forms.PictureBox img_1;
         private System.Windows.Forms.Label lbl_jugador;
+        private System.Windows.Forms.PictureBox btn_cancel;
     }
 }

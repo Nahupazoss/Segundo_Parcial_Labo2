@@ -32,5 +32,10 @@ namespace ClaseParcial2
                 return this.rondasGanadas;
             }
         }
+
+        public override string ToString()
+        {
+            return $"Nombre: {nombre}";
+        }
     }
 }

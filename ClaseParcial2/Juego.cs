@@ -9,14 +9,14 @@ namespace ClaseParcial2
 {
     public class Juego
     {
-        //CancellationTokenSource cancelarTask;
-        //CancellationToken cancelar;
+        CancellationTokenSource  cancelarTask = new CancellationTokenSource();
         Task tarea;
         private int ronda;
         private string ganador;
         private Random random;
         private Jugador jugadorUno;
         private Jugador jugadorDos;
+        int flag = 0;
 
         public event Action<List<int>> SeTiraronDados;
         public event Action<string> MandarMensaje;
@@ -28,23 +28,26 @@ namespace ClaseParcial2
             this.jugadorDos = jugadorDos;
             ronda = 1;
             random = new Random();
-            //cancelarTask = new CancellationTokenSource();
-            //cancelar = cancelarTask.Token;
-            tarea = new Task(Jugar);
+            tarea = new Task(()=>Jugar(cancelarTask.Token),cancelarTask.Token);
         }
         public string Ganador
         {
             get { return this.ganador; }
         }
+        public int Ronda { get => ronda; }
+      
         public void ComenzarPartida()
         {
             tarea.Start();
+            this.flag = 1;
+            
         }
         public void CancelarPartida()
         {
-            //cancelarTask.Cancel();
+            cancelarTask.Cancel();
+            this.flag = -1;
         }
-        private void Jugar()
+        private void Jugar(CancellationToken cancelarToken)
         {
 
             while(true)
@@ -53,8 +56,9 @@ namespace ClaseParcial2
                 Thread.Sleep(1000);
                 JugarUnaRonda(jugadorUno, jugadorDos);
 
-                if (ronda == 2)
-                {                      
+                if (ronda == 2 || cancelarToken.IsCancellationRequested)
+                {
+                    flag = -1;
                     break;
                 }
                 ronda++;
@@ -106,10 +110,10 @@ namespace ClaseParcial2
 
             //reproductor.Stream = Resources.ResourceManager.GetStream("SonidoWinner");
             AsignarDados(dadosJugadorUno);
-            Thread.Sleep(1500);
+            Thread.Sleep(2000);
             //reproductor.Stream = Resources.ResourceManager.GetStream("SonidoWinner");
             AsignarDados(dadosJugadorDos);
-            Thread.Sleep(1500);
+            Thread.Sleep(2000);
 
             int puntosJugadorUno = CalcularSumaDeLosDados(dadosJugadorUno);
             int puntosJugadorDos = CalcularSumaDeLosDados(dadosJugadorDos);
@@ -117,7 +121,7 @@ namespace ClaseParcial2
             MandarMensaje?.Invoke($"{unJugador.Nombre} tiro 5 dados y sumo en total {puntosJugadorUno}\n");
             MandarMensaje?.Invoke($"{otroJugador.Nombre} tiro 5 dados y sumo en total {puntosJugadorDos}\n");
 
-            Thread.Sleep(1500);
+            Thread.Sleep(2000);
             if (puntosJugadorUno == puntosJugadorDos)
             {
                 MandarMensaje?.Invoke($"Empate!\n");
@@ -139,5 +143,9 @@ namespace ClaseParcial2
             Thread.Sleep(2000);
         }
 
+        public override string ToString()
+        {   
+            return $"Jugador 1: {jugadorUno} Jugador 2: {jugadorDos}";  
+        }
     }
 }

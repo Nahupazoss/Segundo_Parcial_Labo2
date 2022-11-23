@@ -38,9 +38,12 @@ namespace Parcial2Labo2
             this.cmbx_CantJugadoress = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btn_PartidaSimulado = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
@@ -67,7 +70,7 @@ namespace Parcial2Labo2
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(14, 37);
+            this.textBox1.Location = new System.Drawing.Point(7, 12);
             this.textBox1.Name = "textBox1";
             this.textBox1.PlaceholderText = "NOMBRE DE SALA";
             this.textBox1.Size = new System.Drawing.Size(198, 23);
@@ -114,7 +117,7 @@ namespace Parcial2Labo2
             this.cmbx_CantJugadoress.AccessibleName = "";
             this.cmbx_CantJugadoress.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbx_CantJugadoress.FormattingEnabled = true;
-            this.cmbx_CantJugadoress.Location = new System.Drawing.Point(14, 110);
+            this.cmbx_CantJugadoress.Location = new System.Drawing.Point(7, 76);
             this.cmbx_CantJugadoress.Name = "cmbx_CantJugadoress";
             this.cmbx_CantJugadoress.Size = new System.Drawing.Size(198, 23);
             this.cmbx_CantJugadoress.TabIndex = 12;
@@ -126,14 +129,16 @@ namespace Parcial2Labo2
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(14, 79);
+            this.label1.Location = new System.Drawing.Point(7, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 17);
+            this.label1.Size = new System.Drawing.Size(89, 17);
             this.label1.TabIndex = 13;
-            this.label1.Text = "Cantidad de jugadores:";
+            this.label1.Text = "JUGADOR 1";
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.cmbx_CantJugadoress);
@@ -142,6 +147,30 @@ namespace Parcial2Labo2
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(228, 198);
             this.panel1.TabIndex = 14;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.AccessibleDescription = "";
+            this.comboBox1.AccessibleName = "";
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(7, 148);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(198, 23);
+            this.comboBox1.TabIndex = 17;
+            this.comboBox1.Tag = "";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(7, 113);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(89, 17);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "JUGADOR 2";
             // 
             // pictureBox2
             // 
@@ -170,12 +199,23 @@ namespace Parcial2Labo2
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.listBox1);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(12, 304);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(872, 217);
             this.panel2.TabIndex = 16;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 15;
+            this.listBox1.Location = new System.Drawing.Point(17, 15);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(819, 184);
+            this.listBox1.TabIndex = 18;
+            this.listBox1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseDoubleClick);
             // 
             // pictureBox3
             // 
@@ -244,5 +284,8 @@ namespace Parcial2Labo2
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
