@@ -10,10 +10,7 @@ namespace ClaseParcial2
     {
         public static bool ValidarTexto(string dato)
         {
-            return !string.IsNullOrEmpty(dato);
+            return !string.IsNullOrEmpty(dato) && !string.IsNullOrWhiteSpace(dato);
         }
-
-
-
     }
 }

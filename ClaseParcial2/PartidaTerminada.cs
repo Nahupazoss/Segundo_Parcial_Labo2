@@ -20,5 +20,12 @@ namespace ClaseParcial2
             this.ganador = ganador;
             this.cantidadRondas = cantidadRondas;
         }
+
+        public string Jugador { get => jugador1.Nombre; }
+
+        public int CantidadRondas { get => cantidadRondas; }
+
+
     }
 }
+

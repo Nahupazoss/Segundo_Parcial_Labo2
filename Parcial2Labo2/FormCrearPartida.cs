@@ -14,6 +14,7 @@ namespace Parcial2Labo2
     public partial class FormCrearPartida : Form
     {
         FormPartida menuPartida;
+
         //FormJugadorV2 menuPartidaSimulada;
         public FormCrearPartida()
         {

@@ -16,7 +16,7 @@ namespace ClaseParcial2
         private Random random;
         private Jugador jugadorUno;
         private Jugador jugadorDos;
-        int flag = 0;
+        int flag;
 
         public event Action<List<int>> SeTiraronDados;
         public event Action<string> MandarMensaje;
@@ -29,6 +29,7 @@ namespace ClaseParcial2
             ronda = 1;
             random = new Random();
             tarea = new Task(()=>Jugar(cancelarTask.Token),cancelarTask.Token);
+            flag = 0;
         }
         public string Ganador
         {
@@ -36,20 +37,21 @@ namespace ClaseParcial2
         }
         public int Ronda { get => ronda; }
       
-        public void ComenzarPartida()
+        public int ComenzarPartida()
         {
             tarea.Start();
             this.flag = 1;
+            return flag;
             
         }
-        public void CancelarPartida()
+        public int CancelarPartida()
         {
             cancelarTask.Cancel();
             this.flag = -1;
+            return flag;
         }
         private void Jugar(CancellationToken cancelarToken)
         {
-
             while(true)
             {
                 MandarMensaje?.Invoke($"Se esta jugando la ronda {ronda}\n");

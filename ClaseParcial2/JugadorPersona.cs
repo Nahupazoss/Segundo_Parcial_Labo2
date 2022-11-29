@@ -66,6 +66,10 @@ namespace ClaseParcial2
             {
                 return this.password;
             }
+            set
+            {
+                this.password = value;
+            }
         }
         public int PartidasPerdidas
         {

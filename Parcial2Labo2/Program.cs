@@ -22,10 +22,10 @@ namespace Parcial2Labo2
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.Run(new FormInicioSesion());
             }
-            catch (Exception)
+            catch(Exception)
             {
-
-                throw;
+                MessageBox.Show("Erro inesperado","Error");
+                Application.Exit();            
             }
         }
     }
