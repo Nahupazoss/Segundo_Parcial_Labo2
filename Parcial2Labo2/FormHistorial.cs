@@ -13,7 +13,8 @@ namespace Parcial2Labo2
 {
     public partial class FormHistorial : Form
     {
-        AccesoDatos datos;
+        AccesoDatosPartida basedatosPartida;
+        List<PartidaTerminada> partidas;
         public FormHistorial()
         {
             InitializeComponent();
@@ -32,28 +33,28 @@ namespace Parcial2Labo2
 
         private void FormHistorial_Load(object sender, EventArgs e)
         {
+            basedatosPartida = new AccesoDatosPartida();
+            partidas = new List<PartidaTerminada>();
             ActualizarDataGrid();
-            datos = new AccesoDatos();
         }
 
         public void ActualizarDataGrid()
         {
             dtgv_historial.DataSource = null;
-            dtgv_historial.DataSource = Sistema.PartidasEnJuego;
+            partidas = basedatosPartida.ObtenerListaDato();
+            dtgv_historial.DataSource = partidas;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             if (this.dtgv_historial.CurrentRow is not null)
             {
-                DialogResult respuesta = MessageBox.Show("¿Esta seguro que desea eliminar el pasajero?", "Eliminación", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+                DialogResult respuesta = MessageBox.Show("¿Estas seguro que desea eliminar la partida del historial?", "Eliminación", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
 
                 if (respuesta == DialogResult.Yes)
                 {
                     int aux = dtgv_historial.CurrentRow.Index;
-                    datos.EliminarDato(aux);
-                    this.dtgv_historial.DataSource = null;
-                    this.dtgv_historial.DataSource = Sistema.ObtenerJugadoresPersona();
+                    //datos.EliminarDato(aux);
                 }
             }
             else

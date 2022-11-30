@@ -104,6 +104,7 @@ namespace Parcial2Labo2
         private void btn_tirar1_Click(object sender, EventArgs e)
         {
             juego.ComenzarPartida();
+            btn_tirar1.Enabled = false;
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)

@@ -13,6 +13,7 @@ namespace Parcial2Labo2
 {
     public partial class FormMenuPrincipal : Form
     {
+        JugadorPersona jugador;
         FormInicioSesion menuInicioSesion;
         FormCrearPartida menuCrearPartida;
         FormEstadisticas menuEstadisticas;
@@ -24,11 +25,17 @@ namespace Parcial2Labo2
             InitializeComponent();
         }
 
-        public FormMenuPrincipal(string mensaje,bool hayJugadorLogueado) : this()
+        public FormMenuPrincipal(JugadorPersona jugadorPersona) : this()
         {
-            this.lbl_Bienvenida.Text = mensaje;
-            this.btn_Estadisticas.Enabled = hayJugadorLogueado;
-            this.lbl_mensajeAviso.Visible = !hayJugadorLogueado;
+            this.jugador = jugadorPersona;
+            this.lbl_Bienvenida.Text = jugador.usuario;
+            this.lbl_mensajeAviso.Visible = true;
+        }
+
+        public FormMenuPrincipal(string jugadorInvitado) : this()
+        {
+            this.lbl_Bienvenida.Text = jugadorInvitado;
+            this.btn_Estadisticas.Enabled = false;
         }
 
         public string Mensaje
@@ -40,7 +47,7 @@ namespace Parcial2Labo2
         {
             this.img_menu.Image = Properties.Resources.imagenmenu;
             menuInicioSesion = new FormInicioSesion();
-            menuCrearPartida = new FormCrearPartida();
+            menuCrearPartida = new FormCrearPartida(jugador);
             menuEstadisticas = new FormEstadisticas();
             menuHistorial = new FormHistorial();
             menuAyuda = new FormAyuda();
@@ -69,9 +76,10 @@ namespace Parcial2Labo2
 
         private void btn_Estadisticas_Click(object sender, EventArgs e)
         {
+            menuEstadisticas.ActualizarEstadisticas();
             menuEstadisticas.Show();
         }
-
+                                                                    
         private void btn_Help_Click(object sender, EventArgs e)
         {
             menuAyuda.Show();
@@ -80,6 +88,7 @@ namespace Parcial2Labo2
         private void btn_HistorialPartidas_Click(object sender, EventArgs e)
         {
             menuHistorial.Show();
+
         }
     }
 }

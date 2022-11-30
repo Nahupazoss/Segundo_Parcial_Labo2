@@ -30,8 +30,6 @@ namespace Parcial2Labo2
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCrearPartida));
-            this.btn_JugarYa = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_Salir = new System.Windows.Forms.PictureBox();
             this.img_dados2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,28 +52,6 @@ namespace Parcial2Labo2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btn_JugarYa
-            // 
-            this.btn_JugarYa.BackColor = System.Drawing.Color.Maroon;
-            this.btn_JugarYa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_JugarYa.ForeColor = System.Drawing.Color.White;
-            this.btn_JugarYa.Location = new System.Drawing.Point(155, 248);
-            this.btn_JugarYa.Name = "btn_JugarYa";
-            this.btn_JugarYa.Size = new System.Drawing.Size(89, 50);
-            this.btn_JugarYa.TabIndex = 2;
-            this.btn_JugarYa.Text = "JUGAR YA!!";
-            this.btn_JugarYa.UseVisualStyleBackColor = false;
-            this.btn_JugarYa.Click += new System.EventHandler(this.btn_JugarYa_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(7, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "NOMBRE DE SALA";
-            this.textBox1.Size = new System.Drawing.Size(198, 23);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Tag = "";
             // 
             // btn_Salir
             // 
@@ -117,7 +93,7 @@ namespace Parcial2Labo2
             this.cmbx_CantJugadoress.AccessibleName = "";
             this.cmbx_CantJugadoress.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbx_CantJugadoress.FormattingEnabled = true;
-            this.cmbx_CantJugadoress.Location = new System.Drawing.Point(7, 76);
+            this.cmbx_CantJugadoress.Location = new System.Drawing.Point(7, 43);
             this.cmbx_CantJugadoress.Name = "cmbx_CantJugadoress";
             this.cmbx_CantJugadoress.Size = new System.Drawing.Size(198, 23);
             this.cmbx_CantJugadoress.TabIndex = 12;
@@ -129,7 +105,7 @@ namespace Parcial2Labo2
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(7, 47);
+            this.label1.Location = new System.Drawing.Point(7, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 17);
             this.label1.TabIndex = 13;
@@ -139,13 +115,12 @@ namespace Parcial2Labo2
             // 
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.cmbx_CantJugadoress);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Location = new System.Drawing.Point(12, 32);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(228, 198);
+            this.panel1.Size = new System.Drawing.Size(228, 163);
             this.panel1.TabIndex = 14;
             // 
             // comboBox1
@@ -154,7 +129,7 @@ namespace Parcial2Labo2
             this.comboBox1.AccessibleName = "";
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(7, 148);
+            this.comboBox1.Location = new System.Drawing.Point(7, 122);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(198, 23);
             this.comboBox1.TabIndex = 17;
@@ -166,7 +141,7 @@ namespace Parcial2Labo2
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(7, 113);
+            this.label3.Location = new System.Drawing.Point(7, 87);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 17);
             this.label3.TabIndex = 16;
@@ -189,9 +164,9 @@ namespace Parcial2Labo2
             this.btn_PartidaSimulado.BackColor = System.Drawing.Color.Maroon;
             this.btn_PartidaSimulado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_PartidaSimulado.ForeColor = System.Drawing.Color.White;
-            this.btn_PartidaSimulado.Location = new System.Drawing.Point(12, 248);
+            this.btn_PartidaSimulado.Location = new System.Drawing.Point(12, 206);
             this.btn_PartidaSimulado.Name = "btn_PartidaSimulado";
-            this.btn_PartidaSimulado.Size = new System.Drawing.Size(137, 50);
+            this.btn_PartidaSimulado.Size = new System.Drawing.Size(228, 50);
             this.btn_PartidaSimulado.TabIndex = 15;
             this.btn_PartidaSimulado.Text = "SIMULAR PARTIDA";
             this.btn_PartidaSimulado.UseVisualStyleBackColor = false;
@@ -202,9 +177,9 @@ namespace Parcial2Labo2
             this.panel2.Controls.Add(this.listBox1);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(12, 304);
+            this.panel2.Location = new System.Drawing.Point(12, 262);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(872, 217);
+            this.panel2.Size = new System.Drawing.Size(872, 219);
             this.panel2.TabIndex = 16;
             // 
             // listBox1
@@ -213,7 +188,7 @@ namespace Parcial2Labo2
             this.listBox1.ItemHeight = 15;
             this.listBox1.Location = new System.Drawing.Point(17, 15);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(819, 184);
+            this.listBox1.Size = new System.Drawing.Size(843, 184);
             this.listBox1.TabIndex = 18;
             this.listBox1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseDoubleClick);
             // 
@@ -222,9 +197,9 @@ namespace Parcial2Labo2
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 3);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(526, 309);
+            this.pictureBox3.Size = new System.Drawing.Size(526, 306);
             this.pictureBox3.TabIndex = 17;
             this.pictureBox3.TabStop = false;
             // 
@@ -233,9 +208,9 @@ namespace Parcial2Labo2
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(275, -3);
+            this.pictureBox1.Location = new System.Drawing.Point(275, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(649, 312);
+            this.pictureBox1.Size = new System.Drawing.Size(649, 216);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
@@ -244,9 +219,8 @@ namespace Parcial2Labo2
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(907, 565);
+            this.ClientSize = new System.Drawing.Size(907, 506);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.btn_JugarYa);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.btn_PartidaSimulado);
             this.Controls.Add(this.panel1);
@@ -271,8 +245,6 @@ namespace Parcial2Labo2
         }
 
         #endregion
-        private System.Windows.Forms.Button btn_JugarYa;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox btn_Salir;
         private System.Windows.Forms.PictureBox img_dados2;
         private System.Windows.Forms.Label label2;

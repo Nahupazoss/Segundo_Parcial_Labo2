@@ -10,21 +10,26 @@ namespace ClaseParcial2
     {
         static JugadorPersona jugadorLogueado;
         static List<JugadorPersona> jugadoresPersona;
+        static List<PartidaTerminada> historialPartidas;
         static List<Jugador> jugador;
         static List<Juego> partidasEnJuego;
-        static AccesoDatos accesoDatosJugador; 
+        static AccesoDatos accesoDatosJugador;
+        static AccesoDatosPartida accesoDatosHistorialPartidas;
 
         public static JugadorPersona JugadorLogueado { get => jugadorLogueado; set => jugadorLogueado = value; }
         public static List<JugadorPersona> JugadorPersona { get => jugadoresPersona; }
+        public static List<PartidaTerminada> PartidaTerminada { get => historialPartidas; }
         public static List<Jugador> Jugador { get => jugador; }
         public static List<Juego> PartidasEnJuego { get => partidasEnJuego; }
 
         static Sistema()
         {
             accesoDatosJugador = new AccesoDatos();
+            accesoDatosHistorialPartidas = new AccesoDatosPartida();
             jugador = new List<Jugador>();
             partidasEnJuego = new List<Juego>();
             jugadoresPersona = accesoDatosJugador.ObtenerListaDato();
+            historialPartidas = accesoDatosHistorialPartidas.ObtenerListaDato();
             HardCodeJugadorIA();
         }
 
@@ -32,6 +37,12 @@ namespace ClaseParcial2
         {
             jugadoresPersona = accesoDatosJugador.ObtenerListaDato();
             return jugadoresPersona;
+        }
+
+        public static List<PartidaTerminada> ObtenerPartidasTerminas()
+        {
+            historialPartidas = accesoDatosHistorialPartidas.ObtenerListaDato();
+            return historialPartidas;
         }
 
         private static void HardCodeJugadorIA()
@@ -65,7 +76,7 @@ namespace ClaseParcial2
             accesoDatosJugador.AgregarDato(jugador);
         }
 
-        public static void InstanciarPartidaIA(Jugador jugador1 , Jugador jugador2)
+        public static void InstanciarPartidaIA(JugadorPersona jugador1 , Jugador jugador2)
         {
             partidasEnJuego.Add(new Juego(jugador1, jugador2));
         }

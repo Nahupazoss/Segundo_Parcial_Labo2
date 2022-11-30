@@ -179,7 +179,7 @@ namespace Parcial2Labo2
             this.btn_Help.Image = ((System.Drawing.Image)(resources.GetObject("btn_Help.Image")));
             this.btn_Help.Location = new System.Drawing.Point(691, 3);
             this.btn_Help.Name = "btn_Help";
-            this.btn_Help.Size = new System.Drawing.Size(68, 56);
+            this.btn_Help.Size = new System.Drawing.Size(68, 50);
             this.btn_Help.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_Help.TabIndex = 20;
             this.btn_Help.TabStop = false;

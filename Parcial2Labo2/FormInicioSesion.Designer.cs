@@ -48,6 +48,7 @@ namespace Parcial2Labo2
             this.img_SonidoActivo = new System.Windows.Forms.PictureBox();
             this.btn_AutoComplete = new System.Windows.Forms.Button();
             this.lbl_Fecha = new System.Windows.Forms.Label();
+            this.btn_modificar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgn_inicio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
             this.panel1.SuspendLayout();
@@ -278,12 +279,27 @@ namespace Parcial2Labo2
             this.lbl_Fecha.TabIndex = 13;
             this.lbl_Fecha.Text = "Jugar a la generala nunca fue tan facil!";
             // 
+            // btn_modificar
+            // 
+            this.btn_modificar.BackColor = System.Drawing.Color.Maroon;
+            this.btn_modificar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_modificar.ForeColor = System.Drawing.Color.White;
+            this.btn_modificar.Location = new System.Drawing.Point(115, 313);
+            this.btn_modificar.Name = "btn_modificar";
+            this.btn_modificar.Size = new System.Drawing.Size(66, 24);
+            this.btn_modificar.TabIndex = 15;
+            this.btn_modificar.Text = "ADMIN";
+            this.btn_modificar.UseVisualStyleBackColor = false;
+            this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
+            // 
             // FormInicioSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(934, 349);
+            this.Controls.Add(this.btn_modificar);
             this.Controls.Add(this.lbl_Fecha);
             this.Controls.Add(this.btn_AutoComplete);
             this.Controls.Add(this.img_SonidoActivo);
@@ -337,6 +353,7 @@ namespace Parcial2Labo2
         private System.Windows.Forms.Button btn_Invitado;
         private System.Windows.Forms.Button btn_AutoComplete;
         private System.Windows.Forms.Label lbl_Fecha;
+        private System.Windows.Forms.Button btn_modificar;
     }
 }
 

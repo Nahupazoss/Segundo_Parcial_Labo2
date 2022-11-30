@@ -13,22 +13,20 @@ namespace Parcial2Labo2
 {
     public partial class FormCrearPartida : Form
     {
-        FormPartida menuPartida;
-
+        JugadorPersona jugador;
         //FormJugadorV2 menuPartidaSimulada;
-        public FormCrearPartida()
+        public FormCrearPartida(JugadorPersona jugadorPersona)
         {
             InitializeComponent();
+            jugador = jugadorPersona;
         }
 
         private void FormCrearPartida_Load(object sender, EventArgs e)
         {
             this.img_dados2.Image = Properties.Resources.dadoss;
-            cmbx_CantJugadoress.DataSource = new List<Jugador>(Sistema.Jugador);
+            cmbx_CantJugadoress.DataSource = new List<JugadorPersona> { jugador};
             comboBox1.DataSource = new List<Jugador>(Sistema.Jugador);
-            menuPartida = new FormPartida();
             ActualizarListboxPartidas();
-            //menuPartidaSimulada = new FormJugadorV2();
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)
@@ -38,29 +36,15 @@ namespace Parcial2Labo2
 
             if (opcion == DialogResult.Yes)
             {
-                Close();
-            }
-        }
-
-        private void btn_JugarYa_Click(object sender, EventArgs e)
-        {
-            string nombreSala = textBox1.Text;
-            if (Validador.ValidarTexto(nombreSala))
-            {
-                menuPartida.Show();
-            }
-            else
-            {
-                MessageBox.Show("Debes ponerle nombre a tu sala!");
+                Hide();
             }
         }
 
         private void btn_PartidaSimulado_Click(object sender, EventArgs e)
         {
-            // Crear una nueva partida
-            Sistema.InstanciarPartidaIA((Jugador)cmbx_CantJugadoress.SelectedItem, (Jugador)comboBox1.SelectedItem);
-            ActualizarListboxPartidas();
-            //menuPartidaSimulada.Show();
+                Sistema.InstanciarPartidaIA((JugadorPersona)cmbx_CantJugadoress.SelectedItem, (Jugador)comboBox1.SelectedItem);
+                jugador.partidasJugadas++;
+                ActualizarListboxPartidas();
         }
         private void ActualizarListboxPartidas()
         {

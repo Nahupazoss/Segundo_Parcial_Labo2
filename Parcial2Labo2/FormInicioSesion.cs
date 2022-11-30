@@ -15,6 +15,7 @@ namespace Parcial2Labo2
     {
         System.Media.SoundPlayer musicaEspera;
         FormRegistro menuRegistro;
+        FormHistorialJugadoresPersona menuHistorialJugadores;
         public FormInicioSesion()
         {
             InitializeComponent();
@@ -29,6 +30,7 @@ namespace Parcial2Labo2
             musicaEspera = new System.Media.SoundPlayer(audioEspera);
             musicaEspera.Play();
             menuRegistro = new FormRegistro();
+            menuHistorialJugadores = new FormHistorialJugadoresPersona();
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)
@@ -50,7 +52,7 @@ namespace Parcial2Labo2
 
             if (Validador.ValidarTexto(usuario) && Validador.ValidarTexto(pass) && Sistema.LoguearJugador(usuario,pass))
             {
-                FormMenuPrincipal menuPrincipal = new FormMenuPrincipal($"¡Bienvenido {usuario}!",true);
+                FormMenuPrincipal menuPrincipal = new FormMenuPrincipal(Sistema.JugadorLogueado);
 
                 menuPrincipal.Show();
                 Hide();
@@ -86,7 +88,7 @@ namespace Parcial2Labo2
 
             if(Validador.ValidarTexto(usuario))
             {
-                FormMenuPrincipal menuPrincipal = new FormMenuPrincipal($"¡Bienvenido {usuario}!",false);
+                FormMenuPrincipal menuPrincipal = new FormMenuPrincipal($"¡Bienvenido {usuario}!");
 
                 menuPrincipal.Show();
                 Hide();
@@ -110,6 +112,13 @@ namespace Parcial2Labo2
         {
             txt_Usuario.Text = "NahuPaz";
             txt_Pass.Text = "123a";
+        }
+
+        private void btn_modificar_Click(object sender, EventArgs e)
+        {
+            Hide();
+            menuHistorialJugadores.Show();
+            musicaEspera.Stop();
         }
     }
 }

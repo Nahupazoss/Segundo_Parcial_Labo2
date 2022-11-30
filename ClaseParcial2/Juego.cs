@@ -14,7 +14,7 @@ namespace ClaseParcial2
         private int ronda;
         private string ganador;
         private Random random;
-        private Jugador jugadorUno;
+        private JugadorPersona jugadorUno;
         private Jugador jugadorDos;
         int flag;
 
@@ -22,7 +22,7 @@ namespace ClaseParcial2
         public event Action<string> MandarMensaje;
         public event EventHandler TerminoPartida;
 
-        public Juego(Jugador jugadorUno, Jugador jugadorDos)
+        public Juego(JugadorPersona jugadorUno, Jugador jugadorDos)
         {
             this.jugadorUno = jugadorUno;
             this.jugadorDos = jugadorDos;
@@ -97,7 +97,7 @@ namespace ClaseParcial2
 
         }
 
-        private void JugarUnaRonda(Jugador unJugador, Jugador otroJugador)
+        private void JugarUnaRonda(JugadorPersona unJugador, Jugador otroJugador)
         {
             Action<string> miDelegado = Mensaje;
             miDelegado += Mensaje;
@@ -120,7 +120,7 @@ namespace ClaseParcial2
             int puntosJugadorUno = CalcularSumaDeLosDados(dadosJugadorUno);
             int puntosJugadorDos = CalcularSumaDeLosDados(dadosJugadorDos);
 
-            MandarMensaje?.Invoke($"{unJugador.Nombre} tiro 5 dados y sumo en total {puntosJugadorUno}\n");
+            MandarMensaje?.Invoke($"{unJugador.usuario} tiro 5 dados y sumo en total {puntosJugadorUno}\n");
             MandarMensaje?.Invoke($"{otroJugador.Nombre} tiro 5 dados y sumo en total {puntosJugadorDos}\n");
 
             Thread.Sleep(2000);
@@ -132,7 +132,7 @@ namespace ClaseParcial2
             {
                 if (puntosJugadorUno > puntosJugadorDos)
                 {
-                   ganador = $"{unJugador.Nombre} gano la ronda con {puntosJugadorUno}!\n";                  
+                   ganador = $"{unJugador.usuario} gano la ronda con {puntosJugadorUno}!\n";                  
                 }
                 else
                 {

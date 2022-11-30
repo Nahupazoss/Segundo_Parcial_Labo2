@@ -45,18 +45,29 @@ namespace GeneralaTest
             Assert.IsTrue(resultado);
         }
 
-        /*[TestMethod]
+        [TestMethod]
         public void ModificarAlJugadorPasadoPorParametroYRetornarTrue()
         {
             //arrange
             AccesoDatos baseDeDatos = new AccesoDatos();
-            JugadorPersona jugador = new JugadorPersona("Rodrigo", "Pazos", "NahuPazos", "123Nn", 1, 1, 2);
+            JugadorPersona jugador = new JugadorPersona(7,"Rodrigo", "Pazos", "NahuPazos", "123Nn", 1, 1, 2);
             bool resultado;
             //act
             resultado = baseDeDatos.ModificarDato(jugador);
             //assert
             Assert.IsTrue(resultado);
-        }*/
+        }
 
+        [TestMethod]
+        public void ElimiarAlJugadorPasadoPorParametroYRetornarTrue()
+        {
+            //arrange
+            AccesoDatos baseDeDatos = new AccesoDatos();
+            bool resultado;
+            //act
+            resultado = baseDeDatos.EliminarDato(35);
+            //assert
+            Assert.IsTrue(resultado);
+        }
     }
 }

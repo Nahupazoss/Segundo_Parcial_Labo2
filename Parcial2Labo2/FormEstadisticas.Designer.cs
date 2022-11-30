@@ -43,9 +43,13 @@ namespace Parcial2Labo2
             this.lbl_perdidas = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.lbl_numCantJugadores = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -200,18 +204,42 @@ namespace Parcial2Labo2
             this.lbl_numCantJugadores.TabIndex = 18;
             this.lbl_numCantJugadores.Text = "0";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Black;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(-138, 336);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(269, 488);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 27;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Black;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(599, 336);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(304, 488);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 28;
+            this.pictureBox2.TabStop = false;
+            // 
             // FormEstadisticas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(792, 690);
-            this.Controls.Add(this.lbl_numCantJugadores);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.lbl_perdidas);
             this.Controls.Add(this.lbl_ganadas);
-            this.Controls.Add(this.lbl_jugadas);
+            this.Controls.Add(this.lbl_perdidas);
+            this.Controls.Add(this.lbl_numCantJugadores);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.lbl_jugadas);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_Salir);
@@ -225,6 +253,8 @@ namespace Parcial2Labo2
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,5 +275,7 @@ namespace Parcial2Labo2
         private System.Windows.Forms.Label lbl_perdidas;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lbl_numCantJugadores;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

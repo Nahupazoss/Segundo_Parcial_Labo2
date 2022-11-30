@@ -71,6 +71,7 @@ namespace ClaseParcial2
                 this.password = value;
             }
         }
+
         public int PartidasPerdidas
         {
             get
@@ -78,6 +79,7 @@ namespace ClaseParcial2
                 return this.partidasPerdidas;
             }
         }
+
         public int PartidasGanadas
         {
             get
@@ -86,10 +88,22 @@ namespace ClaseParcial2
             }
         }
 
+        public int PartidasJugadas
+        {
+            get
+            {
+                return this.partidasJugadas;
+            }
+        }
+
         public bool CheckearPassword(string password)
         {
             return password == this.password;
         }
 
+        public override string ToString()
+        {
+            return this.usuario; 
+        }
     }
 }
