@@ -18,12 +18,13 @@ namespace ClaseParcial2
 
         public static JugadorPersona JugadorLogueado { get => jugadorLogueado; set => jugadorLogueado = value; }
         public static List<JugadorPersona> JugadorPersona { get => jugadoresPersona; }
-        public static List<PartidaTerminada> PartidaTerminada { get => historialPartidas; }
+        public static List<PartidaTerminada> PartidaTerminada { get => historialPartidas; set => historialPartidas = value; }
         public static List<Jugador> Jugador { get => jugador; }
         public static List<Juego> PartidasEnJuego { get => partidasEnJuego; }
 
         static Sistema()
         {
+            PartidaTerminada = new List<PartidaTerminada>();
             accesoDatosJugador = new AccesoDatos();
             accesoDatosHistorialPartidas = new AccesoDatosPartida();
             jugador = new List<Jugador>();
@@ -78,7 +79,17 @@ namespace ClaseParcial2
 
         public static void InstanciarPartidaIA(JugadorPersona jugador1 , Jugador jugador2)
         {
-            partidasEnJuego.Add(new Juego(jugador1, jugador2));
+            Juego partida = new Juego(jugador1, jugador2);
+            partida.GuardarPartida += GuardarPartidaTerminadaEnBaseDeDatos;
+            partidasEnJuego.Add(partida);
+        }
+
+        public static void GuardarPartidaTerminadaEnBaseDeDatos(Juego juego)
+        {
+            PartidaTerminada partidaTerminada = new PartidaTerminada(juego.JugadorUno.nombre, juego.JugadorDos.Nombre, juego.Puntaje1, juego.Puntaje2, juego.Ganador);
+            AccesoDatosPartida partidasAdo = new AccesoDatosPartida();
+            partidasAdo.AgregarDato(partidaTerminada);
+            PartidaTerminada = partidasAdo.ObtenerListaDato();
         }
 
         /*public static void InstanciarPartida(Jugador jugador1, Jugador jugador2)

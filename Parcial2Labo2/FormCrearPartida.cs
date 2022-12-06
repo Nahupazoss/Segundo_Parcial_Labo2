@@ -14,17 +14,25 @@ namespace Parcial2Labo2
     public partial class FormCrearPartida : Form
     {
         JugadorPersona jugador;
-        //FormJugadorV2 menuPartidaSimulada;
+
         public FormCrearPartida(JugadorPersona jugadorPersona)
         {
             InitializeComponent();
-            jugador = jugadorPersona;
+            jugador = jugadorPersona;           
         }
 
         private void FormCrearPartida_Load(object sender, EventArgs e)
         {
             this.img_dados2.Image = Properties.Resources.dadoss;
-            cmbx_CantJugadoress.DataSource = new List<JugadorPersona> { jugador};
+            if (jugador == null)
+            {
+                cmbx_CantJugadoress.DataSource = new List<string> { "Invitado 8) "};
+                cmbx_CantJugadoress.Enabled = false;
+            }
+            else
+            {
+                cmbx_CantJugadoress.DataSource = new List<JugadorPersona> { jugador};
+            }
             comboBox1.DataSource = new List<Jugador>(Sistema.Jugador);
             ActualizarListboxPartidas();
         }

@@ -40,6 +40,7 @@ namespace Parcial2Labo2
             this.img_1 = new System.Windows.Forms.PictureBox();
             this.lbl_jugador = new System.Windows.Forms.Label();
             this.btn_cancel = new System.Windows.Forms.PictureBox();
+            this.dgtv_puntuaciones = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_5)).BeginInit();
@@ -48,6 +49,7 @@ namespace Parcial2Labo2
             ((System.ComponentModel.ISupportInitialize)(this.img_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgtv_puntuaciones)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_tirar1
@@ -171,6 +173,15 @@ namespace Parcial2Labo2
             this.btn_cancel.TabStop = false;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
+            // dgtv_puntuaciones
+            // 
+            this.dgtv_puntuaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgtv_puntuaciones.Location = new System.Drawing.Point(26, 391);
+            this.dgtv_puntuaciones.Name = "dgtv_puntuaciones";
+            this.dgtv_puntuaciones.RowTemplate.Height = 25;
+            this.dgtv_puntuaciones.Size = new System.Drawing.Size(68, 112);
+            this.dgtv_puntuaciones.TabIndex = 14;
+            // 
             // FormJugadorV2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -178,14 +189,16 @@ namespace Parcial2Labo2
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(715, 614);
+            this.Controls.Add(this.dgtv_puntuaciones);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.lbl_jugador);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.btn_tirar1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormJugadorV2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Partida";
             this.Load += new System.EventHandler(this.FormJugadorV2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).EndInit();
@@ -196,6 +209,7 @@ namespace Parcial2Labo2
             ((System.ComponentModel.ISupportInitialize)(this.img_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgtv_puntuaciones)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,5 +226,6 @@ namespace Parcial2Labo2
         private System.Windows.Forms.PictureBox img_1;
         private System.Windows.Forms.Label lbl_jugador;
         private System.Windows.Forms.PictureBox btn_cancel;
+        private System.Windows.Forms.DataGridView dgtv_puntuaciones;
     }
 }

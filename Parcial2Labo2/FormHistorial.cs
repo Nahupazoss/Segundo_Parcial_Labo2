@@ -40,9 +40,12 @@ namespace Parcial2Labo2
 
         public void ActualizarDataGrid()
         {
-            dtgv_historial.DataSource = null;
-            partidas = basedatosPartida.ObtenerListaDato();
-            dtgv_historial.DataSource = partidas;
+            if(basedatosPartida != null)
+            {
+                dtgv_historial.DataSource = null;
+                partidas = basedatosPartida.ObtenerListaDato();
+                dtgv_historial.DataSource = partidas;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

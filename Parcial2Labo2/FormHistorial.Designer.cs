@@ -45,10 +45,10 @@ namespace Parcial2Labo2
             // dtgv_historial
             // 
             this.dtgv_historial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgv_historial.Location = new System.Drawing.Point(79, 104);
+            this.dtgv_historial.Location = new System.Drawing.Point(76, 105);
             this.dtgv_historial.Name = "dtgv_historial";
             this.dtgv_historial.RowTemplate.Height = 25;
-            this.dtgv_historial.Size = new System.Drawing.Size(742, 541);
+            this.dtgv_historial.Size = new System.Drawing.Size(647, 541);
             this.dtgv_historial.TabIndex = 0;
             // 
             // label2
@@ -80,7 +80,7 @@ namespace Parcial2Labo2
             this.btn_Salir.BackColor = System.Drawing.Color.Black;
             this.btn_Salir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_Salir.Image")));
-            this.btn_Salir.Location = new System.Drawing.Point(847, 12);
+            this.btn_Salir.Location = new System.Drawing.Point(748, 12);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(55, 47);
             this.btn_Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -92,7 +92,7 @@ namespace Parcial2Labo2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Black;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(608, 306);
+            this.pictureBox2.Location = new System.Drawing.Point(511, 306);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(443, 501);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -115,7 +115,7 @@ namespace Parcial2Labo2
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(905, 686);
+            this.ClientSize = new System.Drawing.Size(815, 686);
             this.Controls.Add(this.dtgv_historial);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);

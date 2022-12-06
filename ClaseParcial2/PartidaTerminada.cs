@@ -42,6 +42,7 @@ namespace ClaseParcial2
             this.ganador = ganador;
         }
 
+        public int Id { get { return this.id; } set { this.id = value; } }
         public string Jugador1 { get => jugador1; set => jugador1 = value; }
         public string Jugador2 { get => jugador2; set => jugador2 = value; }
         public int Puntaje1 { get => puntaje1; set => puntaje1 = value; }

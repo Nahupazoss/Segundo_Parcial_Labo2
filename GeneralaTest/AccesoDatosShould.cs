@@ -57,17 +57,5 @@ namespace GeneralaTest
             //assert
             Assert.IsTrue(resultado);
         }
-
-        [TestMethod]
-        public void ElimiarAlJugadorPasadoPorParametroYRetornarTrue()
-        {
-            //arrange
-            AccesoDatos baseDeDatos = new AccesoDatos();
-            bool resultado;
-            //act
-            resultado = baseDeDatos.EliminarDato(35);
-            //assert
-            Assert.IsTrue(resultado);
-        }
     }
 }

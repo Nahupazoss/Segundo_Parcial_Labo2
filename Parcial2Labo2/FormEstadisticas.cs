@@ -14,10 +14,12 @@ namespace Parcial2Labo2
     public partial class FormEstadisticas : Form
     {
         AccesoDatos baseDatos;
+        AccesoDatosPartida datosPartida;
         public FormEstadisticas()
         {
             InitializeComponent();
             baseDatos = new AccesoDatos();
+            datosPartida = new AccesoDatosPartida();
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)
@@ -40,8 +42,8 @@ namespace Parcial2Labo2
         {
             baseDatos.ModificarDato(Sistema.JugadorLogueado);
             lbl_numCantJugadores.Text = Sistema.JugadorPersona.Count.ToString();
-            lbl_ganadas.Text = Sistema.JugadorLogueado.PartidasGanadas.ToString();
-            lbl_perdidas.Text = Sistema.JugadorLogueado.PartidasPerdidas.ToString();
+            lbl_ganadas.Text = datosPartida.ObtenerPartidasPorJugador(Sistema.JugadorLogueado.nombre).FindAll(item => item.Ganador == Sistema.JugadorLogueado.nombre).Count.ToString();
+            lbl_perdidas.Text = datosPartida.ObtenerPartidasPorJugador(Sistema.JugadorLogueado.nombre).FindAll(item => item.Ganador != Sistema.JugadorLogueado.nombre && item.Ganador != "Empate").Count.ToString();
             lbl_jugadas.Text = Sistema.JugadorLogueado.partidasJugadas.ToString();
         }
     }

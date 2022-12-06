@@ -44,31 +44,6 @@ namespace GeneralaTest
             //assert
             Assert.IsTrue(resultado);
         }
-
-        [TestMethod]
-        public void ModificarLaPartidaPasadoPorParametroYRetornarTrue()
-        {
-            //arrange
-            AccesoDatosPartida baseDeDatos = new AccesoDatosPartida();
-            PartidaTerminada partida = new PartidaTerminada(1, "Nahuel", "Pazos", 1, 0, "Nahuel");
-            bool resultado;
-            //act
-            resultado = baseDeDatos.ModificarDato(partida);
-            //assert
-            Assert.IsTrue(resultado);
-        }
-
-        [TestMethod]
-        public void ElimiarLaPartidaPasadoPorParametroYRetornarTrue()
-        {
-            //arrange
-            AccesoDatosPartida baseDeDatos = new AccesoDatosPartida();
-            bool resultado;
-            //act
-            resultado = baseDeDatos.EliminarDato(1);
-            //assert
-            Assert.IsTrue(resultado);
-        }
     }
 }
 

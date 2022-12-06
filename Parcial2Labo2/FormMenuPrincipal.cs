@@ -87,8 +87,8 @@ namespace Parcial2Labo2
 
         private void btn_HistorialPartidas_Click(object sender, EventArgs e)
         {
+            menuHistorial.ActualizarDataGrid();
             menuHistorial.Show();
-
         }
     }
 }

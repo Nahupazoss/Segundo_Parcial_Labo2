@@ -19,7 +19,6 @@ namespace Parcial2Labo2
         Juego juego;
         SoundPlayer reproductor;
         List<Image> imagenesDado;
-
         public FormJugadorV2(Juego juego)
         {
             InitializeComponent();
@@ -115,7 +114,7 @@ namespace Parcial2Labo2
             if (opcion == DialogResult.Yes)
             {
                 Hide();
-            }      
+            }
         }
 
         private void btn_cancel_Click(object sender, EventArgs e)
