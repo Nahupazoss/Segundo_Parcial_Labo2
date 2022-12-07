@@ -48,6 +48,7 @@ Lo utilice para testear codigo que podria llegar a generar problemas.
 
 # SQL
 Genere una base de datos la cual poseee dos tablas, una de ellas sera utilizada para el registro de jugadoresPersona los cuales podemos agregar,modificar y eliminar.La otra de ellas sera utilizada para el historial de partidas que se simularan.
+
 ![image](https://user-images.githubusercontent.com/98673588/206077741-5b9ebd81-f9ad-43be-a003-81988b3d5398.png)
 
 # Task
