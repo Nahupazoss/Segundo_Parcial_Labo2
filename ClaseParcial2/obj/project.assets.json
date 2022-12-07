@@ -459,11 +459,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rodri\\source\\repos\\ClaseParcial2\\ClaseParcial2.csproj",
+      "projectUniqueName": "C:\\Users\\Rodri\\Desktop\\dadwa\\Segundo_Parcial_Labo2\\ClaseParcial2\\ClaseParcial2.csproj",
       "projectName": "ClaseParcial2",
-      "projectPath": "C:\\Users\\Rodri\\source\\repos\\ClaseParcial2\\ClaseParcial2.csproj",
+      "projectPath": "C:\\Users\\Rodri\\Desktop\\dadwa\\Segundo_Parcial_Labo2\\ClaseParcial2\\ClaseParcial2.csproj",
       "packagesPath": "C:\\Users\\Rodri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rodri\\source\\repos\\ClaseParcial2\\obj\\",
+      "outputPath": "C:\\Users\\Rodri\\Desktop\\dadwa\\Segundo_Parcial_Labo2\\ClaseParcial2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
