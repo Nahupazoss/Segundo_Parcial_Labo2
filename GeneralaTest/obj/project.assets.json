@@ -6556,11 +6556,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rodri\\source\\repos\\GeneralaTest\\GeneralaTest.csproj",
+      "projectUniqueName": "C:\\Users\\Rodri\\Desktop\\Segundo_Parcial_Labo2-recuperatorio_sp_Pazos.Nahuel\\GeneralaTest\\GeneralaTest.csproj",
       "projectName": "GeneralaTest",
-      "projectPath": "C:\\Users\\Rodri\\source\\repos\\GeneralaTest\\GeneralaTest.csproj",
+      "projectPath": "C:\\Users\\Rodri\\Desktop\\Segundo_Parcial_Labo2-recuperatorio_sp_Pazos.Nahuel\\GeneralaTest\\GeneralaTest.csproj",
       "packagesPath": "C:\\Users\\Rodri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rodri\\source\\repos\\GeneralaTest\\obj\\",
+      "outputPath": "C:\\Users\\Rodri\\Desktop\\Segundo_Parcial_Labo2-recuperatorio_sp_Pazos.Nahuel\\GeneralaTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6577,8 +6577,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Rodri\\source\\repos\\ClaseParcial2\\ClaseParcial2.csproj": {
-              "projectPath": "C:\\Users\\Rodri\\source\\repos\\ClaseParcial2\\ClaseParcial2.csproj"
+            "C:\\Users\\Rodri\\Desktop\\Segundo_Parcial_Labo2-recuperatorio_sp_Pazos.Nahuel\\ClaseParcial2\\ClaseParcial2.csproj": {
+              "projectPath": "C:\\Users\\Rodri\\Desktop\\Segundo_Parcial_Labo2-recuperatorio_sp_Pazos.Nahuel\\ClaseParcial2\\ClaseParcial2.csproj"
             }
           }
         }

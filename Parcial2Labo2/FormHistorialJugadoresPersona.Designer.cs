@@ -93,17 +93,17 @@ namespace Parcial2Labo2
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Gray;
             this.label1.Location = new System.Drawing.Point(12, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 26);
+            this.label1.Size = new System.Drawing.Size(167, 22);
             this.label1.TabIndex = 15;
             this.label1.Text = "Historial jugadores";
             // 
             // btn_modificar
             // 
-            this.btn_modificar.Location = new System.Drawing.Point(503, 78);
+            this.btn_modificar.Location = new System.Drawing.Point(384, 78);
             this.btn_modificar.Name = "btn_modificar";
             this.btn_modificar.Size = new System.Drawing.Size(113, 23);
             this.btn_modificar.TabIndex = 16;
@@ -113,7 +113,7 @@ namespace Parcial2Labo2
             // 
             // btn_eliminar
             // 
-            this.btn_eliminar.Location = new System.Drawing.Point(384, 78);
+            this.btn_eliminar.Location = new System.Drawing.Point(503, 78);
             this.btn_eliminar.Name = "btn_eliminar";
             this.btn_eliminar.Size = new System.Drawing.Size(113, 23);
             this.btn_eliminar.TabIndex = 17;
@@ -139,7 +139,7 @@ namespace Parcial2Labo2
             this.btn_actualizar.BackColor = System.Drawing.Color.Black;
             this.btn_actualizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_actualizar.Image = ((System.Drawing.Image)(resources.GetObject("btn_actualizar.Image")));
-            this.btn_actualizar.Location = new System.Drawing.Point(580, 9);
+            this.btn_actualizar.Location = new System.Drawing.Point(641, 78);
             this.btn_actualizar.Name = "btn_actualizar";
             this.btn_actualizar.Size = new System.Drawing.Size(55, 47);
             this.btn_actualizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

@@ -183,7 +183,7 @@ namespace ClaseParcial2
                 this.comando.Parameters.AddWithValue("@partidasJugadas", param.partidasJugadas);
 
                 string sql = "UPDATE dbo.tabla_jugadores ";
-                sql += "SET nombre = @nombre, apellido = @apellido, usuario = @usuario, password = @password, partidasPerdidas = @partidasGanadas, partidasJugadas = @partidasJugadas ";
+                sql += "SET nombre = @nombre, apellido = @apellido, usuario = @usuario, password = @password, partidasGanadas = @partidasGanadas, partidasPerdidas = @partidasPerdidas,  partidasJugadas = @partidasJugadas ";
                 sql += "WHERE id = @id";
 
                 this.comando.CommandType = CommandType.Text;

@@ -17,6 +17,8 @@ namespace Parcial2Labo2
         List<JugadorPersona> jugadores;
         FormInicioSesion menuInicio;
         FormModificar menuModificar;
+        SerializadorJson<List<PartidaTerminada>> serializadorJson;
+        SerializadorXml<List<PartidaTerminada>> serializadorXml;
         public FormHistorialJugadoresPersona()
         {
             InitializeComponent();
@@ -27,6 +29,8 @@ namespace Parcial2Labo2
             baseDatos = new AccesoDatos();
             jugadores = new List<JugadorPersona>();
             menuInicio = new FormInicioSesion();
+            serializadorJson = new SerializadorJson<List<PartidaTerminada>>("Jugadores.json");
+            serializadorXml = new SerializadorXml<List<PartidaTerminada>>("Jugadores.xml");
             ActualizarDataGrid();
         }
         
@@ -81,6 +85,30 @@ namespace Parcial2Labo2
         private void btn_actualizar_Click(object sender, EventArgs e)
         {
             ActualizarDataGrid();
+        }
+
+        private void btn_SerializarJSON_Click(object sender, EventArgs e)
+        {
+            DialogResult opcion;
+            opcion = MessageBox.Show("Estas seguro de serializar el historial en JSON", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (opcion == DialogResult.Yes)
+            {
+                if (jugadores == null)
+                {
+                    MessageBox.Show("Contacte con el soporte");
+                    return;
+                }
+
+                if (jugadores.Count < 1)
+                {
+                    MessageBox.Show("Lista vacia,no se puede serializar");
+                    return;
+                }
+
+                //serializadorJson.Serializar(jugadores);
+                MessageBox.Show("Se serializo con exito,se ha generado el archivo en el escritorio");
+            }
         }
     }
 }

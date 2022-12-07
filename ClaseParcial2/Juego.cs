@@ -8,6 +8,7 @@ namespace ClaseParcial2
     public class Juego
     {
         CancellationTokenSource  cancelarTask = new CancellationTokenSource();
+        AccesoDatos datosJugador = new AccesoDatos(); 
         Task tarea;
         private int ronda;
         private string ganador;
@@ -84,30 +85,36 @@ namespace ClaseParcial2
                 string nombre1 = jugadorUno.usuario;
                 string nombre2 = jugadorDos.Nombre;
 
-                if (ronda == 2 || cancelarToken.IsCancellationRequested)
+                if (ronda == 10 || cancelarToken.IsCancellationRequested)
                 {
                     flag = -1;
                     break;
                 }
                 ronda++;
             }
+
             if (TerminoPartida is not null)
             {
                 if(Puntaje1 > Puntaje2)
                 {
                     Ganador = jugadorUno.nombre;
-                    MandarMensaje?.Invoke($"{jugadorUno.nombre} gana la partida!");
-                } else
+                    jugadorUno.partidasGanadas++;
+                    MandarMensaje?.Invoke($"{jugadorUno.nombre} gana la partida!\n");
+                    datosJugador.ModificarDato(jugadorUno);
+                } 
+                else
                 {
                     if(Puntaje2 > Puntaje1)
                     {
                         Ganador = jugadorDos.Nombre;
-                        MandarMensaje?.Invoke($"{jugadorDos.Nombre} gana la partida!");
+                        jugadorUno.partidasPerdidas++;
+                        MandarMensaje?.Invoke($"{jugadorDos.Nombre} gana la partida!\n");
+                        datosJugador.ModificarDato(JugadorUno);
                     }
                     else
                     {
                         Ganador = "Empate";
-                        MandarMensaje?.Invoke("No hubo ganador...");
+                        MandarMensaje?.Invoke("No hubo ganador...\n");
                     }
                 }
                 TerminoPartida(this, EventArgs.Empty);
@@ -147,6 +154,10 @@ namespace ClaseParcial2
                             puntaje = 50;
                             nombreJugada = "Generala";
                         }
+                        else
+                        {
+                            puntaje = 5;
+                        }
                     }
                 }
             }
@@ -177,8 +188,6 @@ namespace ClaseParcial2
 
             var miVariable = miDelegado.GetInvocationList();
 
-            miDelegado.Invoke("hola");
-
             List<int> dadosJugadorUno = new List<int>();
             List<int> dadosJugadorDos = new List<int>();
 
@@ -191,13 +200,12 @@ namespace ClaseParcial2
 
             string nombreJugada = "";
             int puntosJugadorUno = CalcularSumaDeLosDados(dadosJugadorUno, out nombreJugada);
-            int puntosJugadorDos = CalcularSumaDeLosDados(dadosJugadorDos, out nombreJugada);
-
             Puntaje1 += puntosJugadorUno;
-            Puntaje2 += puntosJugadorDos;
+            MandarMensaje?.Invoke($"{unJugador.usuario} hizo la jugada: {nombreJugada} y sumo en total {puntosJugadorUno}\n");
 
-            MandarMensaje?.Invoke($"{unJugador.usuario} saco una {nombreJugada} y sumo en total {puntosJugadorUno}\n");
-            MandarMensaje?.Invoke($"{otroJugador.Nombre} saco una {nombreJugada} y sumo en total {puntosJugadorDos}\n");
+            int puntosJugadorDos = CalcularSumaDeLosDados(dadosJugadorDos, out nombreJugada);
+            Puntaje2 += puntosJugadorDos;
+            MandarMensaje?.Invoke($"{otroJugador.Nombre} hizo la jugada: {nombreJugada} y sumo en total {puntosJugadorDos}\n");
 
             Thread.Sleep(1000);
             if (puntosJugadorUno == puntosJugadorDos)
@@ -217,7 +225,7 @@ namespace ClaseParcial2
             }
            
             Thread.Sleep(1000);
-            MandarMensaje?.Invoke($"Termino la ronda...\n");
+            MandarMensaje?.Invoke($"\nTermino la ronda...\n");
             Thread.Sleep(1000);
         }
 
@@ -229,10 +237,6 @@ namespace ClaseParcial2
         public bool HayGanador(int puntaje1,int puntaje2)
         {
             bool resultado = false;
-           
-
-
-
             return resultado;
         }
 

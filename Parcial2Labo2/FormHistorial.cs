@@ -13,6 +13,8 @@ namespace Parcial2Labo2
 {
     public partial class FormHistorial : Form
     {
+        SerializadorJson<List<PartidaTerminada>> serializadorJson;
+        SerializadorXml<List<PartidaTerminada>> serializadorXml;
         AccesoDatosPartida basedatosPartida;
         List<PartidaTerminada> partidas;
         public FormHistorial()
@@ -35,6 +37,8 @@ namespace Parcial2Labo2
         {
             basedatosPartida = new AccesoDatosPartida();
             partidas = new List<PartidaTerminada>();
+            serializadorJson = new SerializadorJson<List<PartidaTerminada>>("PartidasTerminadas.json");
+            serializadorXml = new SerializadorXml<List<PartidaTerminada>>("PartidasTerminadas.xml");
             ActualizarDataGrid();
         }
 
@@ -48,21 +52,99 @@ namespace Parcial2Labo2
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_SerializarXml_Click(object sender, EventArgs e)
         {
-            if (this.dtgv_historial.CurrentRow is not null)
-            {
-                DialogResult respuesta = MessageBox.Show("¿Estas seguro que desea eliminar la partida del historial?", "Eliminación", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+            DialogResult opcion;
+            opcion = MessageBox.Show("Estas seguro de serializar el hitorial en  XML?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-                if (respuesta == DialogResult.Yes)
-                {
-                    int aux = dtgv_historial.CurrentRow.Index;
-                    //datos.EliminarDato(aux);
-                }
-            }
-            else
+            if (opcion == DialogResult.Yes)
             {
-                MessageBox.Show("No posee ningún pasaje cargado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if(partidas == null)
+                {
+                    MessageBox.Show("Contacte con el soporte");
+                    return;
+                }
+                
+                if(partidas.Count < 1)
+                {
+                    MessageBox.Show("Lista vacia,no se puede serializar");
+                    return;
+                }
+               
+                serializadorXml.Serializar(partidas);
+                MessageBox.Show("Se serializo con exito,se ha generado el archivo en el escritorio");
+            }
+        }
+
+        private void btn_SerializarJson_Click(object sender, EventArgs e)
+        {
+            DialogResult opcion;
+            opcion = MessageBox.Show("Estas seguro de serializar el historial en JSON", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (opcion == DialogResult.Yes)
+            {
+                if (partidas == null)
+                {
+                    MessageBox.Show("Contacte con el soporte");
+                    return;
+                }
+
+                if (partidas.Count < 1)
+                {
+                    MessageBox.Show("Lista vacia,no se puede serializar");
+                    return;
+                }
+
+                serializadorJson.Serializar(partidas);
+                MessageBox.Show("Se serializo con exito,se ha generado el archivo en el escritorio");
+            }
+        }
+
+        private void btn_DeserializarJSON(object sender, EventArgs e)
+        {
+            DialogResult opcion;
+            opcion = MessageBox.Show("Estas seguro de deserializar el hitorial en  XML?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (opcion == DialogResult.Yes)
+            {
+                if (partidas == null)
+                {
+                    MessageBox.Show("Contacte con el soporte");
+                    return;
+                }
+
+                if (partidas.Count < 1)
+                {
+                    MessageBox.Show("Lista vacia,no se puede serializar");
+                    return;
+                }
+
+                serializadorJson.Deserializar();
+                MessageBox.Show("Se serializo con exito,se ha generado el archivo en el escritorio");
+            }
+        }
+
+        private void btn_DeserializarXml_Click(object sender, EventArgs e)
+        {
+            DialogResult opcion;
+            opcion = MessageBox.Show("Estas seguro de deserializar el hitorial en  XML?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (opcion == DialogResult.Yes)
+            {
+                if (partidas == null)
+                {
+                    MessageBox.Show("Contacte con el soporte");
+                    return;
+                }
+
+                if (partidas.Count < 1)
+                {
+                    MessageBox.Show("Lista vacia,no se puede serializar");
+                    return;
+                }
+
+                serializadorXml.Deserializar();
+                MessageBox.Show("Se serializo con exito,se ha generado el archivo en el escritorio");
             }
         }
     }

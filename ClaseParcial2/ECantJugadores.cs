@@ -1,4 +1,1 @@
-﻿public enum CantJugador
-{
-    DosJugadores
-}
+﻿

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fQ4w05G2lDeKIOZqlYvB4a5NbDkczxTkN/HOrjX24w8Ib0uMKfsfbuTej1lJIwqKL9dKCPiiBcWauAZIXRuOxA==",
+  "dgSpecHash": "ccqQ8Jyl9+0ilOWq0ypDNOUzqSzgSaFjQWgKJii44I/KwxXIZWbk1GNjMwt2GuMqZdcanXz+xNp6HaROD2MRyA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rodri\\source\\repos\\GeneralaTest\\GeneralaTest.csproj",
+  "projectFilePath": "C:\\Users\\Rodri\\Desktop\\Segundo_Parcial_Labo2-recuperatorio_sp_Pazos.Nahuel\\GeneralaTest\\GeneralaTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rodri\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\Rodri\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

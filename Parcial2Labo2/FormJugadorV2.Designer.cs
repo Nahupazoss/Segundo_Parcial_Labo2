@@ -38,9 +38,8 @@ namespace Parcial2Labo2
             this.img_2 = new System.Windows.Forms.PictureBox();
             this.img_3 = new System.Windows.Forms.PictureBox();
             this.img_1 = new System.Windows.Forms.PictureBox();
-            this.lbl_jugador = new System.Windows.Forms.Label();
             this.btn_cancel = new System.Windows.Forms.PictureBox();
-            this.dgtv_puntuaciones = new System.Windows.Forms.DataGridView();
+            this.richtxtbox_partida = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_5)).BeginInit();
@@ -49,14 +48,14 @@ namespace Parcial2Labo2
             ((System.ComponentModel.ISupportInitialize)(this.img_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgtv_puntuaciones)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_tirar1
             // 
+            this.btn_tirar1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_tirar1.BackColor = System.Drawing.Color.Black;
             this.btn_tirar1.ForeColor = System.Drawing.Color.White;
-            this.btn_tirar1.Location = new System.Drawing.Point(273, 532);
+            this.btn_tirar1.Location = new System.Drawing.Point(265, 646);
             this.btn_tirar1.Name = "btn_tirar1";
             this.btn_tirar1.Size = new System.Drawing.Size(161, 59);
             this.btn_tirar1.TabIndex = 1;
@@ -66,11 +65,11 @@ namespace Parcial2Labo2
             // 
             // btn_Salir
             // 
-            this.btn_Salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_Salir.BackColor = System.Drawing.Color.Transparent;
             this.btn_Salir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_Salir.Image")));
-            this.btn_Salir.Location = new System.Drawing.Point(26, 541);
+            this.btn_Salir.Location = new System.Drawing.Point(12, 646);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(51, 50);
             this.btn_Salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -80,6 +79,7 @@ namespace Parcial2Labo2
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox1.BackColor = System.Drawing.Color.Black;
             this.groupBox1.Controls.Add(this.img_5);
             this.groupBox1.Controls.Add(this.img_4);
@@ -87,7 +87,7 @@ namespace Parcial2Labo2
             this.groupBox1.Controls.Add(this.img_3);
             this.groupBox1.Controls.Add(this.img_1);
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(26, 59);
+            this.groupBox1.Location = new System.Drawing.Point(26, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(663, 196);
             this.groupBox1.TabIndex = 11;
@@ -149,23 +149,13 @@ namespace Parcial2Labo2
             this.img_1.TabIndex = 0;
             this.img_1.TabStop = false;
             // 
-            // lbl_jugador
-            // 
-            this.lbl_jugador.AutoSize = true;
-            this.lbl_jugador.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_jugador.ForeColor = System.Drawing.Color.White;
-            this.lbl_jugador.Location = new System.Drawing.Point(223, 284);
-            this.lbl_jugador.Name = "lbl_jugador";
-            this.lbl_jugador.Size = new System.Drawing.Size(0, 21);
-            this.lbl_jugador.TabIndex = 12;
-            // 
             // btn_cancel
             // 
-            this.btn_cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_cancel.BackColor = System.Drawing.Color.Transparent;
             this.btn_cancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_cancel.Image = ((System.Drawing.Image)(resources.GetObject("btn_cancel.Image")));
-            this.btn_cancel.Location = new System.Drawing.Point(558, 552);
+            this.btn_cancel.Location = new System.Drawing.Point(558, 646);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(161, 50);
             this.btn_cancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -173,14 +163,16 @@ namespace Parcial2Labo2
             this.btn_cancel.TabStop = false;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
-            // dgtv_puntuaciones
+            // richtxtbox_partida
             // 
-            this.dgtv_puntuaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgtv_puntuaciones.Location = new System.Drawing.Point(26, 391);
-            this.dgtv_puntuaciones.Name = "dgtv_puntuaciones";
-            this.dgtv_puntuaciones.RowTemplate.Height = 25;
-            this.dgtv_puntuaciones.Size = new System.Drawing.Size(68, 112);
-            this.dgtv_puntuaciones.TabIndex = 14;
+            this.richtxtbox_partida.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.richtxtbox_partida.BackColor = System.Drawing.Color.Black;
+            this.richtxtbox_partida.ForeColor = System.Drawing.Color.White;
+            this.richtxtbox_partida.Location = new System.Drawing.Point(26, 238);
+            this.richtxtbox_partida.Name = "richtxtbox_partida";
+            this.richtxtbox_partida.Size = new System.Drawing.Size(663, 377);
+            this.richtxtbox_partida.TabIndex = 14;
+            this.richtxtbox_partida.Text = "";
             // 
             // FormJugadorV2
             // 
@@ -188,10 +180,9 @@ namespace Parcial2Labo2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(715, 614);
-            this.Controls.Add(this.dgtv_puntuaciones);
+            this.ClientSize = new System.Drawing.Size(723, 722);
+            this.Controls.Add(this.richtxtbox_partida);
             this.Controls.Add(this.btn_cancel);
-            this.Controls.Add(this.lbl_jugador);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.btn_tirar1);
@@ -209,9 +200,7 @@ namespace Parcial2Labo2
             ((System.ComponentModel.ISupportInitialize)(this.img_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgtv_puntuaciones)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -224,8 +213,7 @@ namespace Parcial2Labo2
         private System.Windows.Forms.PictureBox img_2;
         private System.Windows.Forms.PictureBox img_3;
         private System.Windows.Forms.PictureBox img_1;
-        private System.Windows.Forms.Label lbl_jugador;
         private System.Windows.Forms.PictureBox btn_cancel;
-        private System.Windows.Forms.DataGridView dgtv_puntuaciones;
+        private System.Windows.Forms.RichTextBox richtxtbox_partida;
     }
 }

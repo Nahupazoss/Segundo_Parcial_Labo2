@@ -31,6 +31,7 @@ namespace Parcial2Labo2
             musicaEspera.Play();
             menuRegistro = new FormRegistro();
             menuHistorialJugadores = new FormHistorialJugadoresPersona();
+            btn_Invitado.Visible = false;
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)
@@ -110,8 +111,8 @@ namespace Parcial2Labo2
 
         private void btn_AutoComplete_Click(object sender, EventArgs e)
         {
-            txt_Usuario.Text = "NahuPaz";
-            txt_Pass.Text = "asd1";
+            txt_Usuario.Text = "NachoAKD";
+            txt_Pass.Text = "123a";
         }
 
         private void btn_modificar_Click(object sender, EventArgs e)
