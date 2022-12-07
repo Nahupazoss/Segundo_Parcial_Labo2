@@ -70,33 +70,42 @@ namespace Parcial2Labo2
 
         private void MostrarDados(List<int> listaDeDados)
         {
-            for (int i = 0; i < 5; i++)
+            try
             {
-                if (listaDeDados[i] == 1)
+                for (int i = 0; i < 5; i++)
                 {
-                    ((PictureBox)this.groupBox1.Controls[i]).Image = imagenesDado[1];
-                }
-                else if (listaDeDados[i] == 2)
-                {
-                    ((PictureBox)this.groupBox1.Controls[i]).Image = imagenesDado[2];
-                }
-                else if (listaDeDados[i] == 3)
-                {
-                    ((PictureBox)this.groupBox1.Controls[i]).Image = imagenesDado[3];
-                }
-                else if (listaDeDados[i] == 4)
-                {
-                    ((PictureBox)this.groupBox1.Controls[i]).Image = imagenesDado[4];
-                }
-                else if (listaDeDados[i] == 5)
-                {
-                    ((PictureBox)this.groupBox1.Controls[i]).Image = imagenesDado[5];
-                }
-                else if (listaDeDados[i] == 6)
-                {
-                    ((PictureBox)this.groupBox1.Controls[i]).Image = imagenesDado[6];
+                    if (listaDeDados[i] == 1)
+                    {
+                        ((PictureBox)this.groupBox1.Controls[i]).Image = imagenesDado[1];
+                    }
+                    else if (listaDeDados[i] == 2)
+                    {
+                        ((PictureBox)this.groupBox1.Controls[i]).Image = imagenesDado[2];
+                    }
+                    else if (listaDeDados[i] == 3)
+                    {
+                        ((PictureBox)this.groupBox1.Controls[i]).Image = imagenesDado[3];
+                    }
+                    else if (listaDeDados[i] == 4)
+                    {
+                        ((PictureBox)this.groupBox1.Controls[i]).Image = imagenesDado[4];
+                    }
+                    else if (listaDeDados[i] == 5)
+                    {
+                        ((PictureBox)this.groupBox1.Controls[i]).Image = imagenesDado[5];
+                    }
+                    else if (listaDeDados[i] == 6)
+                    {
+                        ((PictureBox)this.groupBox1.Controls[i]).Image = imagenesDado[6];
+                    }
                 }
             }
+            catch (Exception)
+            {
+                MessageBox.Show("Error inesperado", "Error");
+                Application.Exit();
+            }
+           
         }
 
         public void LimpiarDados()

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x0ORBzsLpwpymShIyoxuoiy2j1g09+cvfFvMKsuzTIVeieV4Y5owaQRxwsUKBjooWJBCsQeEo022R/k0ujxj9g==",
+  "dgSpecHash": "IOb2urZW/bUCJWVswo7GIR0x30H2n44cOJVOqrMbXFJpuNztQnbc3bh0/zgRYFYuNgQSExdta54VE1vszbieZw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rodri\\Desktop\\dadwa\\Segundo_Parcial_Labo2\\ClaseParcial2\\ClaseParcial2.csproj",
+  "projectFilePath": "C:\\Users\\Rodri\\Desktop\\Segundo_Parcial_Labo2-recuperatorio_sp_Pazos.Nahuel\\ClaseParcial2\\ClaseParcial2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rodri\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Rodri\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

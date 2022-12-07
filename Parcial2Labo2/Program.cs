@@ -24,7 +24,7 @@ namespace Parcial2Labo2
             }
             catch(Exception)
             {
-                MessageBox.Show("Erro inesperado","Error");
+                MessageBox.Show("Error inesperado","Error");
                 Application.Exit();            
             }
         }
