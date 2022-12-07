@@ -65,7 +65,7 @@ namespace Parcial2Labo2
             this.imgn_inicio.Image = ((System.Drawing.Image)(resources.GetObject("imgn_inicio.Image")));
             this.imgn_inicio.Location = new System.Drawing.Point(12, -68);
             this.imgn_inicio.Name = "imgn_inicio";
-            this.imgn_inicio.Size = new System.Drawing.Size(1145, 462);
+            this.imgn_inicio.Size = new System.Drawing.Size(1145, 445);
             this.imgn_inicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgn_inicio.TabIndex = 0;
             this.imgn_inicio.TabStop = false;

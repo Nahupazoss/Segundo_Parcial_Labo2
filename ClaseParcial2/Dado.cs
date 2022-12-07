@@ -116,14 +116,27 @@ namespace ClaseParcial2
         public static bool Full(int[] mapeoDados)
         {
             bool esFull = false;
+            bool flag1 = false;
+            bool flag2 = false;
 
             for (int i = 0; i < 6; i++)
             {
-                if (mapeoDados[i] == 3 && mapeoDados[i] == 2)
+                if (mapeoDados[i] == 3)
                 {
-                    esFull = true;
-                    break;
+                    flag1 = true;
                 }
+                else
+                {
+                    if(mapeoDados[i] == 2)
+                    {
+                        flag2 = true;
+                    }
+                }
+            }
+
+            if(flag1 == true && flag2 == true)
+            {
+                esFull = true;
             }
 
             return esFull;

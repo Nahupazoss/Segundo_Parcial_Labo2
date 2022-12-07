@@ -31,6 +31,7 @@ namespace Parcial2Labo2
             musicaEspera.Play();
             menuRegistro = new FormRegistro();
             menuHistorialJugadores = new FormHistorialJugadoresPersona();
+            btn_Invitado.Visible = false;
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)

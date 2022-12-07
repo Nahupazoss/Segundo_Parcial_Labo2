@@ -50,14 +50,21 @@ namespace Parcial2Labo2
             }
             else
             {
-                this.lbl_jugador.Text = this.lbl_jugador.Text.Insert(0, mensaje);
+                this.richtxtbox_partida.Text = this.richtxtbox_partida.Text.Insert(0, mensaje);
             }
         }
 
         private void ImprimirResultado(object sender, EventArgs e)
         {
             Juego juego = (Juego)sender;
-            MessageBox.Show(juego.Ganador);
+            if(juego.Puntaje1 > juego.Puntaje2)
+            {
+                MessageBox.Show($"El ganador es: {juego.Ganador} con {juego.Puntaje1} puntos");
+            }
+            else
+            {
+                MessageBox.Show($"El ganador es: {juego.Ganador} con {juego.Puntaje2} puntos");
+            }
             LimpiarDados();
         }
 

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ClaseParcial2.AccesoDatos">
+    <Position X="11" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgEAAAAAAACEABIAAAAAAAAAAAAIgAAAAAAAAAAAE=</HashCode>
+      <FileName>AccesoDatos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClaseParcial2.AccesoDatosPartida">
+    <Position X="12.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgEBAAAAAAAEABAAAAAAAAAAAAAIgAAAAAAAAAAAE=</HashCode>
+      <FileName>AccesoDatosPartida.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClaseParcial2.Dado">
+    <Position X="7.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAABAAAAAAAAAAAAAAAAACEABAgUAAAABAAA=</HashCode>
+      <FileName>Dado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClaseParcial2.Juego">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACBQgAAgAtgAAAIUAIGCgAAAAAgAAQAAAAUAIAAAQAA=</HashCode>
+      <FileName>Juego.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClaseParcial2.Jugador">
+    <Position X="5.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAEACEAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Jugador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClaseParcial2.JugadorPersona">
+    <Position X="4" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAZEAACEAACAAAAAgAAAAAQCAAAEAoAAAgA=</HashCode>
+      <FileName>JugadorPersona.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClaseParcial2.PartidaTerminada">
+    <Position X="9.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACgCAAAgABAAAAIUAAACBAAAAAAAAAAAAAAAAAAIAgA=</HashCode>
+      <FileName>PartidaTerminada.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClaseParcial2.SerializadorJson&lt;T&gt;" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAACAAAAAAAAAAAAQQAAAAAQAAA=</HashCode>
+      <FileName>SerializadorJson.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ClaseParcial2.SerializadorXml&lt;T&gt;" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAACAAAAACAAAAAAAAAAAAQQAAAAAQAAA=</HashCode>
+      <FileName>SerializadorXml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ClaseParcial2.Sistema">
+    <Position X="2.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQBAAAAAQAAAAAAAgEAABIAQAAAQQAQAQBABACEAABA=</HashCode>
+      <FileName>Sistema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClaseParcial2.Validador">
+    <Position X="10.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ClaseParcial2.ISerializador&lt;T&gt;">
+    <Position X="6.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>ISerializador.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

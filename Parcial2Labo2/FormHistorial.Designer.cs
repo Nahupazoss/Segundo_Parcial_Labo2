@@ -36,6 +36,8 @@ namespace Parcial2Labo2
             this.btn_Salir = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_SerializarXml = new System.Windows.Forms.Button();
+            this.btn_SerializarJson = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_historial)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Salir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -44,11 +46,12 @@ namespace Parcial2Labo2
             // 
             // dtgv_historial
             // 
+            this.dtgv_historial.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.dtgv_historial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv_historial.Location = new System.Drawing.Point(76, 105);
             this.dtgv_historial.Name = "dtgv_historial";
             this.dtgv_historial.RowTemplate.Height = 25;
-            this.dtgv_historial.Size = new System.Drawing.Size(647, 541);
+            this.dtgv_historial.Size = new System.Drawing.Size(643, 541);
             this.dtgv_historial.TabIndex = 0;
             // 
             // label2
@@ -77,6 +80,7 @@ namespace Parcial2Labo2
             // 
             // btn_Salir
             // 
+            this.btn_Salir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Salir.BackColor = System.Drawing.Color.Black;
             this.btn_Salir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_Salir.Image")));
@@ -90,6 +94,7 @@ namespace Parcial2Labo2
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.Black;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(511, 306);
@@ -101,6 +106,7 @@ namespace Parcial2Labo2
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox1.BackColor = System.Drawing.Color.Black;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-226, 306);
@@ -110,12 +116,34 @@ namespace Parcial2Labo2
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
             // 
+            // btn_SerializarXml
+            // 
+            this.btn_SerializarXml.Location = new System.Drawing.Point(576, 76);
+            this.btn_SerializarXml.Name = "btn_SerializarXml";
+            this.btn_SerializarXml.Size = new System.Drawing.Size(143, 23);
+            this.btn_SerializarXml.TabIndex = 26;
+            this.btn_SerializarXml.Text = "Serializar Xml";
+            this.btn_SerializarXml.UseVisualStyleBackColor = true;
+            this.btn_SerializarXml.Click += new System.EventHandler(this.btn_SerializarXml_Click);
+            // 
+            // btn_SerializarJson
+            // 
+            this.btn_SerializarJson.Location = new System.Drawing.Point(409, 76);
+            this.btn_SerializarJson.Name = "btn_SerializarJson";
+            this.btn_SerializarJson.Size = new System.Drawing.Size(143, 23);
+            this.btn_SerializarJson.TabIndex = 27;
+            this.btn_SerializarJson.Text = "Serializar Json";
+            this.btn_SerializarJson.UseVisualStyleBackColor = true;
+            this.btn_SerializarJson.Click += new System.EventHandler(this.btn_SerializarJson_Click);
+            // 
             // FormHistorial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(815, 686);
+            this.ClientSize = new System.Drawing.Size(809, 686);
+            this.Controls.Add(this.btn_SerializarJson);
+            this.Controls.Add(this.btn_SerializarXml);
             this.Controls.Add(this.dtgv_historial);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
@@ -144,5 +172,7 @@ namespace Parcial2Labo2
         private System.Windows.Forms.PictureBox btn_Salir;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_SerializarXml;
+        private System.Windows.Forms.Button btn_SerializarJson;
     }
 }
