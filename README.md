@@ -24,6 +24,7 @@ Genere una base de datos la cual poseee dos tablas, una de ellas sera utilizada 
 
 # Task
 Utilize tasks para las partidas, cada partida que se crea es una task y esto es para que se ejecute en segundo plano automáticamente y el flujo de ejecución del programa no se bloqueé.
+
 ![image](https://user-images.githubusercontent.com/98673588/206078554-c79662b1-41c3-460f-9584-9a21fb20d7bc.png)
 
 
