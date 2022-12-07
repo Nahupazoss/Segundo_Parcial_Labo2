@@ -27,8 +27,29 @@ Utilize tasks para las partidas, cada partida que se crea es una task y esto es 
 
 ![image](https://user-images.githubusercontent.com/98673588/206078554-c79662b1-41c3-460f-9584-9a21fb20d7bc.png)
 
-
-
+# Manejo de Excepciones
+Donde mas utilize es en la clase AccesoDatos y AccesoDatosPartida, la cual se encarga de trabajar con la base de datos y en cada parte de codigo que hago manejo de cualquier exepcion que se pueda producir.
+ejemplo:
+  public bool ProbarConexion()
+  {
+      bool rta = true;
+      try
+      {
+          this.conexion.Open();
+      }
+      catch (Exception)
+      {
+          rta = false;
+      }
+      finally
+      {
+          if (this.conexion.State == ConnectionState.Open)
+          {
+              this.conexion.Close();
+          }
+      }
+      return rta;
+  }
 
 
 
