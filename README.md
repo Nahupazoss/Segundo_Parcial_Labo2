@@ -47,8 +47,8 @@ Utilice delegados a lo largo de la ejecucion de la partida.
 
 ![image](https://user-images.githubusercontent.com/98673588/206080398-33e1b850-a9da-4dd1-82ce-848f12b78d06.png)
 
-# Generics
-# Interfaces
+# Generics e Interfaces
+Utilice Generics e Interfaces dentro de las clases de SerializarXML y SerializarJSON
 ![image](https://user-images.githubusercontent.com/98673588/206080509-0501aecf-d08d-4ddc-b407-8190e4ce33aa.png)
 
 
