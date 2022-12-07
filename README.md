@@ -32,5 +32,11 @@ Donde mas utilize es en la clase AccesoDatos y AccesoDatosPartida, la cual se en
 
 ![image](https://user-images.githubusercontent.com/98673588/206079048-2d5e187c-99c2-4a4b-922c-b77a0faa8e16.png)
 
+#Eventos
+Utilize eventos a lo largo de la task para poder indicar que ronda se esta jugando,puntajes y quien es el ganador en caso de que lo haya en esa ronda.
+
+![image](https://user-images.githubusercontent.com/98673588/206079473-11ac02ac-4ebb-4e00-aedb-fbe471753a65.png)
+
+
 
 
