@@ -16,6 +16,7 @@ En caso de no querer registrarnos tenemos la opcion de ingresar como invitado en
 # Unit Testing
 ![image](https://user-images.githubusercontent.com/98673588/206077470-a65924fc-e32c-4553-96b8-a3e5e7a81506.png)
 
+
 #SQL
 ![image](https://user-images.githubusercontent.com/98673588/206077741-5b9ebd81-f9ad-43be-a003-81988b3d5398.png)
 Genere una base de datos la cual poseee dos tablas, una de ellas sera utilizada para el registro de jugadoresPersona los cuales podemos agregar,modificar y eliminar.La otra de ellas sera utilizada para el historial de partidas que se simularan.
