@@ -12,7 +12,10 @@ Curso: 2A
 # Resumen del parcial
 La eleccion de mi parcial fue hacer el juego de la generala en el cual podemos registrarnos(a la hora de registrarnos de manera automatica somos cargados a la base de datos) como jugadores para luego poder iniciar sesion y poder entrar al menu principal de la aplicacion,en este menu principal encontraremos un boton de ayuda, un boton el cual nos mostrara todas nuestras estadisticas propias del jugador y cuantos jugadores hay registrados en la app y un boton que nos mostrara el historial de partidas.A su vez en el menu de incio contamos con una opcion de ADMIN la cual podemos utilizar para eliminar y modificar a los jugadores registrados.
 
-En caso de no querer registrarnos tenemos la opcion de ingresar como invitado en el cual solo podremos acceder a lo que es simular/jugar partidas ya sea 1 o mas de una y las podremos jugar a la vez. 
+En caso de no querer registrarnos tenemos la opcion de ingresar como invitado en el cual solo podremos acceder a lo que es simular/jugar partidas ya sea 1 o mas de una y las podremos jugar a la vez.
+
+![image](https://user-images.githubusercontent.com/98673588/206081518-dabbd850-b877-40b4-8a50-97f0fa2b85ee.png)
+
 
 # Contenidos
 Interfaces y Generics
