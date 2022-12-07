@@ -23,7 +23,7 @@ Genere una base de datos la cual poseee dos tablas, una de ellas sera utilizada 
 ![image](https://user-images.githubusercontent.com/98673588/206077741-5b9ebd81-f9ad-43be-a003-81988b3d5398.png)
 
 # Task
-Utilize tasks para las partidas, cada partida que se crea es una task y esto es para que se ejecute en segundo plano automáticamente y el flujo de ejecución del programa no se bloqueé.
+Utilice tasks para las partidas, cada partida que se crea es una task y esto es para que se ejecute en segundo plano automáticamente y el flujo de ejecución del programa no se bloqueé.
 
 ![image](https://user-images.githubusercontent.com/98673588/206078554-c79662b1-41c3-460f-9584-9a21fb20d7bc.png)
 
@@ -33,9 +33,14 @@ Donde mas utilize es en la clase AccesoDatos y AccesoDatosPartida, la cual se en
 ![image](https://user-images.githubusercontent.com/98673588/206079048-2d5e187c-99c2-4a4b-922c-b77a0faa8e16.png)
 
 # Eventos
-Utilize eventos a lo largo de la task para poder indicar que ronda se esta jugando,puntajes y quien es el ganador en caso de que lo haya en esa ronda.
+Utilice eventos a lo largo de la task para poder indicar que ronda se esta jugando,puntajes y quien es el ganador en caso de que lo haya en esa ronda.
 
 ![image](https://user-images.githubusercontent.com/98673588/206079473-11ac02ac-4ebb-4e00-aedb-fbe471753a65.png)
+
+# Serializacion (XML Y JSON)
+Utilice la serializacion para generar archivos.json o archivos.xml los cuales van a contener el historial de partidas.
+
+![image](https://user-images.githubusercontent.com/98673588/206079996-04faf3e8-2810-47e7-b011-301100756b2e.png)
 
 
 
