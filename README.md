@@ -10,16 +10,25 @@ La eleccion de mi parcial fue hacer el juego de la generala en el cual podemos r
 
 En caso de no querer registrarnos tenemos la opcion de ingresar como invitado en el cual solo podremos acceder a lo que es simular/jugar partidas ya sea 1 o mas de una y las podremos jugar a la vez. 
 
-# Contenidos:
+# Contenidos
 Interfaces y Generics
+
 Serialización
+
 Escritura de archivos
+
 Manejo de excepciones
+
 SQL
+
 Unit Testing
+
 Delegados
+
 Task
+
 Eventos
+
 Diagrama de clases
 
 # Diagrama de clases
