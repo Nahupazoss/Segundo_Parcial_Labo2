@@ -42,6 +42,9 @@ Utilice la serializacion para generar archivos.json o archivos.xml los cuales va
 
 ![image](https://user-images.githubusercontent.com/98673588/206079996-04faf3e8-2810-47e7-b011-301100756b2e.png)
 
+# Delegados
+Utilice delegados a lo largo de la ejecucion de la partida.
+![image](https://user-images.githubusercontent.com/98673588/206080398-33e1b850-a9da-4dd1-82ce-848f12b78d06.png)
 
 
 
