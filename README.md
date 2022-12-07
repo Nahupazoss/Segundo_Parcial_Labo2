@@ -2,8 +2,11 @@
 Segundo Parcial Laboratorio 2
 
 Profesor: Maximiliano Neiner 
+
 Profesor: Facundo Rocha
+
 Alumno: Nahuel Rodrigo Pazos
+
 Curso: 2A
 
 La eleccion de mi parcial fue hacer el juego de la generala en el cual podemos registrarnos(a la hora de registrarnos de manera automatica somos cargados a la base de datos) como jugadores para luego poder iniciar sesion y poder entrar al menu principal de la aplicacion,en este menu principal encontraremos un boton de ayuda, un boton el cual nos mostrara todas nuestras estadisticas propias del jugador y cuantos jugadores hay registrados en la app,un boton que nos mostrara el historial de partidas propias.
